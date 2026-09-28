@@ -1,4 +1,15 @@
-import type { DataQuality, Episode, Facility, Geography, LabLinkageDiagnostics, MedicineStockRow, OutreachAction } from "./types"
+import type {
+  DataQuality,
+  Episode,
+  EpisodePrediction,
+  Facility,
+  Geography,
+  LabLinkageDiagnostics,
+  MedicineStockRow,
+  OofPrediction,
+  OutreachAction,
+  TimelineEvent,
+} from "./types"
 
 interface Columnar {
   columns: string[]
@@ -49,4 +60,25 @@ export async function loadDataQuality(): Promise<DataQuality> {
 
 export async function loadLabLinkageDiagnostics(): Promise<LabLinkageDiagnostics> {
   return getJson<LabLinkageDiagnostics>("/data/lab_linkage_diagnostics.json")
+}
+
+/** ~3.4MB, 31k rows -- deliberately NOT loaded by DashboardDataProvider
+ * (which every page mounts). Only the Problems page's patient-journey demo
+ * needs event-grain data; every other page operates on the episode-grain
+ * fact table. Fetched on demand so the other 13 pages' initial load stays light. */
+export async function loadEpisodeTimeline(): Promise<TimelineEvent[]> {
+  return fromColumnar<TimelineEvent>(await getJson<Columnar>("/data/episode_timeline.json"))
+}
+
+/** scripts/train_dropout_model.py output -- EVALUATION-only risk scores, not
+ * loaded by DashboardDataProvider (only the Problems page's prediction demo needs it). */
+export async function loadEpisodePredictions(): Promise<EpisodePrediction[]> {
+  return fromColumnar<EpisodePrediction>(await getJson<Columnar>("/data/episode_predictions.json"))
+}
+
+/** Out-of-fold DEVELOPMENT predictions (real label + what the model would
+ * have predicted, never having trained on this row) -- for the "predicted
+ * vs. actual" demonstration, not loaded globally either. */
+export async function loadOofPredictions(): Promise<OofPrediction[]> {
+  return fromColumnar<OofPrediction>(await getJson<Columnar>("/data/model_oof_predictions.json"))
 }

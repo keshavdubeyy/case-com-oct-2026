@@ -1,0 +1,616 @@
+{
+  "generated_at": "2026-09-28T23:20:41.096657",
+  "n_development": 4132,
+  "n_evaluation": 1384,
+  "dropped_dead_features": [
+    "prior_followup_reviews",
+    "prior_referrals"
+  ],
+  "ltfu_binary": {
+    "cv_5fold": {
+      "logistic_regression": {
+        "roc_auc": 0.7033,
+        "pr_auc": 0.6625,
+        "brier_score": 0.2193,
+        "log_loss": 0.6282,
+        "precision_at_0.5": 0.6317,
+        "recall_at_0.5": 0.661,
+        "f1_at_0.5": 0.646
+      },
+      "gradient_boosting": {
+        "roc_auc": 0.6732,
+        "pr_auc": 0.631,
+        "brier_score": 0.2328,
+        "log_loss": 0.6598,
+        "precision_at_0.5": 0.5964,
+        "recall_at_0.5": 0.6066,
+        "f1_at_0.5": 0.6015
+      }
+    },
+    "time_holdout": {
+      "logistic_regression": {
+        "train_n": 3532,
+        "holdout_n": 600,
+        "holdout_date_range": "2026-06-09 to 2026-06-30",
+        "roc_auc": 0.6803,
+        "pr_auc": 0.6508,
+        "brier_score": 0.2272
+      },
+      "gradient_boosting": {
+        "train_n": 3532,
+        "holdout_n": 600,
+        "holdout_date_range": "2026-06-09 to 2026-06-30",
+        "roc_auc": 0.6718,
+        "pr_auc": 0.6213,
+        "brier_score": 0.2313
+      }
+    }
+  },
+  "care_plan_mechanical_check": {
+    "note": "LTFU rate by count of advised components (0/1/2/3) -- demonstrates the label is mechanically tied to how many components were advised, before any patient-level risk factor is considered.",
+    "by_advised_count": [
+      {
+        "n_advised": 0,
+        "n_episodes": 174,
+        "ltfu_rate": 0.0
+      },
+      {
+        "n_advised": 1,
+        "n_episodes": 1236,
+        "ltfu_rate": 0.3333
+      },
+      {
+        "n_advised": 2,
+        "n_episodes": 1946,
+        "ltfu_rate": 0.5365
+      },
+      {
+        "n_advised": 3,
+        "n_episodes": 776,
+        "ltfu_rate": 0.6856
+      }
+    ]
+  },
+  "ltfu_binary_reduced_features": {
+    "metrics": {
+      "features_excluded": [
+        "medicine_advised",
+        "test_advised",
+        "review_advised"
+      ],
+      "roc_auc": 0.6039,
+      "pr_auc": 0.5724,
+      "precision_at_0.5": 0.5557,
+      "recall_at_0.5": 0.5367,
+      "f1_at_0.5": 0.5461,
+      "note": "Compare to ltfu_binary.cv_5fold.gradient_boosting.roc_auc -- the gap between them is roughly how much of the full model's apparent skill comes from the mechanical advised-count effect rather than genuine patient/context risk factors."
+    },
+    "feature_importance": [
+      {
+        "feature": "distance_to_facility_km",
+        "importance_mean": 0.04511,
+        "importance_std": 0.00624
+      },
+      {
+        "feature": "review_due_days",
+        "importance_mean": 0.04253,
+        "importance_std": 0.00831
+      },
+      {
+        "feature": "block",
+        "importance_mean": 0.00622,
+        "importance_std": 0.00338
+      },
+      {
+        "feature": "gender",
+        "importance_mean": 0.00432,
+        "importance_std": 0.00222
+      },
+      {
+        "feature": "vulnerability_group",
+        "importance_mean": 0.00412,
+        "importance_std": 0.00289
+      },
+      {
+        "feature": "age",
+        "importance_mean": 0.00384,
+        "importance_std": 0.00826
+      },
+      {
+        "feature": "village",
+        "importance_mean": 0.00276,
+        "importance_std": 0.0046
+      },
+      {
+        "feature": "facility_id",
+        "importance_mean": 0.00073,
+        "importance_std": 0.00444
+      },
+      {
+        "feature": "visits_prior_90d",
+        "importance_mean": 0.00053,
+        "importance_std": 0.00135
+      },
+      {
+        "feature": "visits_prior_60d",
+        "importance_mean": 0.00039,
+        "importance_std": 0.00086
+      },
+      {
+        "feature": "visits_prior_30d",
+        "importance_mean": 0.00029,
+        "importance_std": 0.00073
+      },
+      {
+        "feature": "patient_link_tier",
+        "importance_mean": 6e-05,
+        "importance_std": 7e-05
+      },
+      {
+        "feature": "history_unresolved",
+        "importance_mean": 0.0,
+        "importance_std": 0.0
+      },
+      {
+        "feature": "district",
+        "importance_mean": -0.00042,
+        "importance_std": 0.0025
+      },
+      {
+        "feature": "road_access",
+        "importance_mean": -0.00077,
+        "importance_std": 0.00371
+      },
+      {
+        "feature": "prior_relevant_interactions",
+        "importance_mean": -0.00082,
+        "importance_std": 0.00238
+      },
+      {
+        "feature": "patient_link_confidence",
+        "importance_mean": -0.00148,
+        "importance_std": 0.00639
+      },
+      {
+        "feature": "diagnosis_group",
+        "importance_mean": -0.00211,
+        "importance_std": 0.0046
+      },
+      {
+        "feature": "prior_control_status",
+        "importance_mean": -0.00224,
+        "importance_std": 0.00295
+      },
+      {
+        "feature": "connectivity_quality",
+        "importance_mean": -0.00296,
+        "importance_std": 0.00338
+      },
+      {
+        "feature": "prior_ncd_status",
+        "importance_mean": -0.00441,
+        "importance_std": 0.00327
+      }
+    ]
+  },
+  "dropout_stage_multiclass": {
+    "macro_f1": 0.3425,
+    "accuracy": 0.5133,
+    "per_class": {
+      "Completed care journey": {
+        "precision": 0.5922,
+        "recall": 0.7043,
+        "f1": 0.6434,
+        "support": 2144
+      },
+      "Medicine not collected": {
+        "precision": 0.4404,
+        "recall": 0.4487,
+        "f1": 0.4445,
+        "support": 1170
+      },
+      "Review not attended": {
+        "precision": 0.2385,
+        "recall": 0.105,
+        "f1": 0.1458,
+        "support": 543
+      },
+      "Test not completed": {
+        "precision": 0.1921,
+        "recall": 0.1055,
+        "f1": 0.1362,
+        "support": 275
+      }
+    },
+    "note": "Multi-class over all 4 dropout_stage_label values (including 'Completed care journey'), DEVELOPMENT cohort, stratified 5-fold CV."
+  },
+  "feature_importance": {
+    "target_ltfu": [
+      {
+        "feature": "medicine_advised",
+        "importance_mean": 0.05227,
+        "importance_std": 0.00414
+      },
+      {
+        "feature": "distance_to_facility_km",
+        "importance_mean": 0.04399,
+        "importance_std": 0.00712
+      },
+      {
+        "feature": "review_advised",
+        "importance_mean": 0.02825,
+        "importance_std": 0.0042
+      },
+      {
+        "feature": "test_advised",
+        "importance_mean": 0.01719,
+        "importance_std": 0.00712
+      },
+      {
+        "feature": "review_due_days",
+        "importance_mean": 0.00422,
+        "importance_std": 0.00259
+      },
+      {
+        "feature": "road_access",
+        "importance_mean": 0.00217,
+        "importance_std": 0.00251
+      },
+      {
+        "feature": "gender",
+        "importance_mean": 0.0011,
+        "importance_std": 0.0012
+      },
+      {
+        "feature": "visits_prior_60d",
+        "importance_mean": 0.00068,
+        "importance_std": 0.00101
+      },
+      {
+        "feature": "vulnerability_group",
+        "importance_mean": 0.00064,
+        "importance_std": 0.00326
+      },
+      {
+        "feature": "visits_prior_30d",
+        "importance_mean": 0.00058,
+        "importance_std": 0.00032
+      },
+      {
+        "feature": "patient_link_tier",
+        "importance_mean": 0.00032,
+        "importance_std": 0.00025
+      },
+      {
+        "feature": "history_unresolved",
+        "importance_mean": 0.0,
+        "importance_std": 0.0
+      },
+      {
+        "feature": "facility_id",
+        "importance_mean": -0.00023,
+        "importance_std": 0.00413
+      },
+      {
+        "feature": "district",
+        "importance_mean": -0.00042,
+        "importance_std": 0.00191
+      },
+      {
+        "feature": "visits_prior_90d",
+        "importance_mean": -0.00053,
+        "importance_std": 0.00104
+      },
+      {
+        "feature": "patient_link_confidence",
+        "importance_mean": -0.00059,
+        "importance_std": 0.00521
+      },
+      {
+        "feature": "prior_control_status",
+        "importance_mean": -0.001,
+        "importance_std": 0.00186
+      },
+      {
+        "feature": "connectivity_quality",
+        "importance_mean": -0.00113,
+        "importance_std": 0.00229
+      },
+      {
+        "feature": "prior_relevant_interactions",
+        "importance_mean": -0.00114,
+        "importance_std": 0.00156
+      },
+      {
+        "feature": "block",
+        "importance_mean": -0.00118,
+        "importance_std": 0.00148
+      },
+      {
+        "feature": "prior_ncd_status",
+        "importance_mean": -0.00204,
+        "importance_std": 0.00176
+      },
+      {
+        "feature": "diagnosis_group",
+        "importance_mean": -0.00355,
+        "importance_std": 0.00347
+      },
+      {
+        "feature": "village",
+        "importance_mean": -0.00364,
+        "importance_std": 0.00342
+      },
+      {
+        "feature": "age",
+        "importance_mean": -0.00631,
+        "importance_std": 0.00477
+      }
+    ],
+    "target_dropout_stage": [
+      {
+        "feature": "test_advised",
+        "importance_mean": 0.08947,
+        "importance_std": 0.00825
+      },
+      {
+        "feature": "medicine_advised",
+        "importance_mean": 0.06516,
+        "importance_std": 0.00525
+      },
+      {
+        "feature": "review_advised",
+        "importance_mean": 0.05886,
+        "importance_std": 0.00763
+      },
+      {
+        "feature": "distance_to_facility_km",
+        "importance_mean": 0.02549,
+        "importance_std": 0.00452
+      },
+      {
+        "feature": "facility_id",
+        "importance_mean": 0.00414,
+        "importance_std": 0.00137
+      },
+      {
+        "feature": "review_due_days",
+        "importance_mean": 0.0024,
+        "importance_std": 0.00193
+      },
+      {
+        "feature": "village",
+        "importance_mean": 0.0021,
+        "importance_std": 0.00197
+      },
+      {
+        "feature": "prior_control_status",
+        "importance_mean": 0.00196,
+        "importance_std": 0.00154
+      },
+      {
+        "feature": "gender",
+        "importance_mean": 0.0019,
+        "importance_std": 0.00131
+      },
+      {
+        "feature": "visits_prior_90d",
+        "importance_mean": 0.00181,
+        "importance_std": 0.00149
+      },
+      {
+        "feature": "district",
+        "importance_mean": 0.00105,
+        "importance_std": 0.0007
+      },
+      {
+        "feature": "visits_prior_30d",
+        "importance_mean": 0.00036,
+        "importance_std": 0.00118
+      },
+      {
+        "feature": "patient_link_tier",
+        "importance_mean": 0.00011,
+        "importance_std": 0.00025
+      },
+      {
+        "feature": "history_unresolved",
+        "importance_mean": 0.0,
+        "importance_std": 0.0
+      },
+      {
+        "feature": "road_access",
+        "importance_mean": -0.00027,
+        "importance_std": 0.00154
+      },
+      {
+        "feature": "visits_prior_60d",
+        "importance_mean": -0.00055,
+        "importance_std": 0.00044
+      },
+      {
+        "feature": "prior_relevant_interactions",
+        "importance_mean": -0.00086,
+        "importance_std": 0.00109
+      },
+      {
+        "feature": "block",
+        "importance_mean": -0.00104,
+        "importance_std": 0.00074
+      },
+      {
+        "feature": "age",
+        "importance_mean": -0.00177,
+        "importance_std": 0.00435
+      },
+      {
+        "feature": "vulnerability_group",
+        "importance_mean": -0.00253,
+        "importance_std": 0.00223
+      },
+      {
+        "feature": "prior_ncd_status",
+        "importance_mean": -0.00273,
+        "importance_std": 0.00252
+      },
+      {
+        "feature": "connectivity_quality",
+        "importance_mean": -0.00425,
+        "importance_std": 0.00303
+      },
+      {
+        "feature": "diagnosis_group",
+        "importance_mean": -0.0045,
+        "importance_std": 0.00368
+      },
+      {
+        "feature": "patient_link_confidence",
+        "importance_mean": -0.00508,
+        "importance_std": 0.00296
+      }
+    ]
+  },
+  "logistic_coefficients_target_ltfu": [
+    {
+      "feature": "cat__medicine_advised_No",
+      "coefficient": -0.6991,
+      "direction": "lowers LTFU risk"
+    },
+    {
+      "feature": "cat__medicine_advised_Yes",
+      "coefficient": 0.6201,
+      "direction": "raises LTFU risk"
+    },
+    {
+      "feature": "cat__review_advised_No",
+      "coefficient": -0.5101,
+      "direction": "lowers LTFU risk"
+    },
+    {
+      "feature": "cat__village_Kondamallepally",
+      "coefficient": -0.437,
+      "direction": "lowers LTFU risk"
+    },
+    {
+      "feature": "cat__review_advised_Yes",
+      "coefficient": 0.4311,
+      "direction": "raises LTFU risk"
+    },
+    {
+      "feature": "num__distance_to_facility_km",
+      "coefficient": 0.4247,
+      "direction": "raises LTFU risk"
+    },
+    {
+      "feature": "cat__test_advised_No",
+      "coefficient": -0.3868,
+      "direction": "lowers LTFU risk"
+    },
+    {
+      "feature": "cat__facility_id_FAC013",
+      "coefficient": 0.3698,
+      "direction": "raises LTFU risk"
+    },
+    {
+      "feature": "cat__diagnosis_group_Gastrointestinal",
+      "coefficient": -0.3233,
+      "direction": "lowers LTFU risk"
+    },
+    {
+      "feature": "cat__test_advised_Yes",
+      "coefficient": 0.3078,
+      "direction": "raises LTFU risk"
+    },
+    {
+      "feature": "cat__village_Devarakonda",
+      "coefficient": 0.3075,
+      "direction": "raises LTFU risk"
+    },
+    {
+      "feature": "cat__village_Manoor",
+      "coefficient": -0.2974,
+      "direction": "lowers LTFU risk"
+    },
+    {
+      "feature": "cat__facility_id_FAC014",
+      "coefficient": -0.2895,
+      "direction": "lowers LTFU risk"
+    },
+    {
+      "feature": "cat__village_Bodajanampet",
+      "coefficient": 0.2876,
+      "direction": "raises LTFU risk"
+    },
+    {
+      "feature": "cat__village_Bhanur",
+      "coefficient": 0.2761,
+      "direction": "raises LTFU risk"
+    },
+    {
+      "feature": "cat__vulnerability_group_Seasonal migrant",
+      "coefficient": 0.2599,
+      "direction": "raises LTFU risk"
+    },
+    {
+      "feature": "cat__village_Zaheerabad",
+      "coefficient": 0.2378,
+      "direction": "raises LTFU risk"
+    },
+    {
+      "feature": "cat__prior_ncd_status_Hypertension",
+      "coefficient": -0.2334,
+      "direction": "lowers LTFU risk"
+    },
+    {
+      "feature": "cat__facility_id_FAC003",
+      "coefficient": -0.2207,
+      "direction": "lowers LTFU risk"
+    },
+    {
+      "feature": "cat__diagnosis_group_Hypertension+Diabetes",
+      "coefficient": 0.2159,
+      "direction": "raises LTFU risk"
+    },
+    {
+      "feature": "cat__vulnerability_group_General",
+      "coefficient": -0.2089,
+      "direction": "lowers LTFU risk"
+    },
+    {
+      "feature": "cat__village_Jharasangam",
+      "coefficient": -0.2033,
+      "direction": "lowers LTFU risk"
+    },
+    {
+      "feature": "cat__village_Bangarigadda",
+      "coefficient": 0.1932,
+      "direction": "raises LTFU risk"
+    },
+    {
+      "feature": "cat__village_Chandur",
+      "coefficient": -0.1912,
+      "direction": "lowers LTFU risk"
+    },
+    {
+      "feature": "cat__village_Midjil",
+      "coefficient": -0.1849,
+      "direction": "lowers LTFU risk"
+    }
+  ],
+  "priority_tier_rule": "Terciles of risk_probability across the scored (EVALUATION) population: bottom third Low, middle third Medium, top third High.",
+  "eval_predictions_class_balance": {
+    "predicted_lost_to_followup_1": 661,
+    "predicted_lost_to_followup_0": 723,
+    "predicted_dropout_stage_counts": {
+      "Completed care journey": 723,
+      "Medicine not collected": 480,
+      "Review not attended": 126,
+      "Test not completed": 55
+    },
+    "priority_tier_counts": {
+      "Low": 462,
+      "Medium": 461,
+      "High": 461
+    }
+  }
+}

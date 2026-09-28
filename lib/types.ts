@@ -165,6 +165,56 @@ export interface MedicineStockRow {
   stock_status: "Adequate" | "Low stock" | "Reorder raised"
 }
 
+/** From scripts/build_episode_timeline.py -- one raw, dated event per row,
+ * reconstructing a single episode's journey across every source system that
+ * touches it (NCD screening, teleconsultation, prescription, dispensing,
+ * lab, review visit, outreach). The "Problem 1: link the fragmented
+ * records" demonstration on the Problems page. */
+export interface TimelineEvent {
+  episode_id: string
+  event_date: string // "YYYY-MM-DD", or "" if unknown
+  event_type:
+    | "ncd_screening"
+    | "teleconsultation"
+    | "prescription"
+    | "dispensing"
+    | "dispensing_gap"
+    | "lab_order"
+    | "lab_result"
+    | "lab_pending"
+    | "review_visit"
+    | "review_due"
+    | "outreach"
+  label: string
+  detail: string
+  confidence: string | null
+}
+
+/** From scripts/train_dropout_model.py -- one row per EVALUATION episode,
+ * exact column shape of submission_template_episode_predictions.csv. */
+export interface EpisodePrediction {
+  episode_id: string
+  risk_probability: number
+  predicted_lost_to_followup: 0 | 1
+  predicted_dropout_stage: string
+  priority_tier: "Low" | "Medium" | "High"
+}
+
+/** Out-of-fold DEVELOPMENT predictions -- real, known outcome alongside what
+ * the model would have predicted at consult time, never having seen this
+ * row during its own training fold. Used for the "predicted vs. actual"
+ * demonstration on the Problems page (Section C), not a submission file. */
+export interface OofPrediction {
+  episode_id: string
+  consult_date: string
+  target_ltfu: 0 | 1
+  target_dropout_stage: string
+  risk_probability_oof: number
+  predicted_lost_to_followup_oof: 0 | 1
+  predicted_dropout_stage_oof: string
+  priority_tier_oof: "Low" | "Medium" | "High"
+}
+
 export interface LinkageStat {
   source_system: string
   distinct_source_ids: number

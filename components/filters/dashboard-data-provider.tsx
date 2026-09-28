@@ -11,7 +11,7 @@ import {
   loadMedicineStock,
   loadOutreachActions,
 } from "@/lib/data"
-import { applyFilters, DEFAULT_FILTERS, deriveFilterOptions, type FilterOptions, type Filters } from "@/lib/filters"
+import { applyFilters, deriveFilterOptions, INITIAL_FILTERS, type FilterOptions, type Filters } from "@/lib/filters"
 import type { DataQuality, Episode, Facility, Geography, LabLinkageDiagnostics, MedicineStockRow, OutreachAction } from "@/lib/types"
 
 interface DashboardData {
@@ -42,7 +42,7 @@ export function DashboardDataProvider({ children }: { children: React.ReactNode 
   const [medicineStock, setMedicineStock] = React.useState<MedicineStockRow[]>([])
   const [dataQuality, setDataQuality] = React.useState<DataQuality | null>(null)
   const [labLinkageDiagnostics, setLabLinkageDiagnostics] = React.useState<LabLinkageDiagnostics | null>(null)
-  const [filters, setFilters] = React.useState<Filters>(DEFAULT_FILTERS)
+  const [filters, setFilters] = React.useState<Filters>(INITIAL_FILTERS)
 
   React.useEffect(() => {
     let cancelled = false

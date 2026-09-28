@@ -40,6 +40,14 @@ export const DEFAULT_FILTERS: Filters = {
   dropoutStage: [],
 }
 
+/** What the dashboard opens with -- distinct from DEFAULT_FILTERS (the true
+ * empty state "Clear filters" resets to), so clearing filters doesn't just
+ * bounce back to this preset. */
+export const INITIAL_FILTERS: Filters = {
+  ...DEFAULT_FILTERS,
+  diagnosis: ["Hypertension+Diabetes"],
+}
+
 function matches(value: string | null | undefined, selected: string[]): boolean {
   if (selected.length === 0) return true
   return value != null && selected.includes(value)
