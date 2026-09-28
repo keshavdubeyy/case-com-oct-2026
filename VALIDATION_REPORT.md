@@ -324,5 +324,24 @@ Ready for final case-a-thon presentation:
 P0 issues remaining:
 **0**
 
-P1 issues remaining:
+P1 issues remaining (at time of original audit):
 **5**
+
+---
+
+## ADDENDUM — P1 fixes applied
+
+Everything below was added after this report's original audit pass, in response to the P1 items above. Full detail: **`P1_FIXES.md`**, **`LAB_LINKAGE_DIAGNOSTICS.md`**, **`MODEL_FEATURE_AUDIT.md`**. `validation_metrics.csv` and `validation_page_status.csv` were updated in place to reflect the post-fix numbers rather than duplicated here.
+
+| Original P1 item | Resolution |
+|---|---|
+| Medicine Access metric mislabel (MED-01) | **FIXED** — split into two distinctly-named, never-conflated metrics (Medicine Fulfillment Rate, Dispensing Success Rate) across `lib/metrics.ts`, both dashboard pages, and `METRICS.md`. |
+| Partial-fill denominator (MED-02) | **RESOLVED** (documentation corrected to match the implemented episode-level metric; no plumbing added to ship row-level dispensing data). |
+| Lab-to-episode greedy-ordering ambiguity | **QUANTIFIED, not structurally fixed.** 89 of 1,944 matched assignments (4.58%) are order-sensitive — measured and judged not materially significant enough to justify an algorithm change without further design work. Downgraded from P1 to **P2** (useful future enhancement) now that it's bounded and documented, per `LAB_LINKAGE_DIAGNOSTICS.md`. |
+| Predictive modelling / action queue / prioritization not implemented | **Still not implemented — remains P1, and intentionally so.** This work explicitly stopped short of training a model; `processed/model_features_consult_time.csv` and `MODEL_FEATURE_AUDIT.md` are the leakage-safe groundwork for that future step. |
+| NCD linkage temporal rule (`<=` → `<`) | **FIXED.** 9 of 5,516 episodes (0.16%) changed. |
+| Linkage-threshold heuristic disclosure | **FIXED.** Added to `app/data-quality/page.tsx` and `METRICS.md` §12. |
+
+**One additional correctness bug was found and fixed in this pass, not present in the original audit's findings:** `classify_medicine_access()` could classify a multi-medicine prescription as fully dispensed if only one of its medicines was ever dispensed. Affected 209 of 4,209 prescriptions (5.0%); found by, and now guarded against by, `tests/test_medicine_logic.py`. See `P1_FIXES.md` item 6 for full before/after numbers — this changed the Medicine Fulfillment Rate from 59.85% to **54.88%** and the ground-truth cross-check mismatch from 270/1,170 (23.1%) to **109/1,170 (9.3%)**.
+
+**Updated P1 count: 1 remaining** (predictive modelling — intentionally deferred, not a gap in this pass's scope). **P0 count: still 0.** A 30-test automated suite (`tests/`, run via `npm run test:python`) now guards dataset integrity, outcome integrity, medicine-classification logic (including the bug above), cohort protection, linkage scoring, and model-table leakage-safety — see `P1_FIXES.md` for the full list.

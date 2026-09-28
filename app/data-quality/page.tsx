@@ -279,7 +279,7 @@ export default function DataQualityPage() {
         <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
           <StatBlock label="Raw operational village strings" value={dataQuality.village_resolution.n_operational_villages_raw.toLocaleString()} />
           <StatBlock label="Canonical villages" value={dataQuality.village_resolution.n_canonical_villages.toLocaleString()} />
-          <StatBlock label="Resolved" value={`${(dataQuality.village_resolution.resolved_pct * 100).toFixed(1)}%`} />
+          <StatBlock label="Resolved" value={`${dataQuality.village_resolution.resolved_pct.toFixed(1)}%`} />
           <StatBlock label="Mean match score" value={dataQuality.village_resolution.mean_match_score.toFixed(2)} />
         </div>
         <p className="mt-3 text-xs text-muted-foreground leading-relaxed">

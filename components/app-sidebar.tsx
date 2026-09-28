@@ -9,8 +9,10 @@ import {
   Database,
   FlaskConical,
   Home,
+  Lightbulb,
   Map,
   MessageSquareMore,
+  OctagonAlert,
   Pill,
   Route as RouteIcon,
   Stethoscope,
@@ -44,6 +46,8 @@ const NAV = [
   { href: "/segments", label: "Patient Segments", icon: Users },
   { href: "/history", label: "Historical Behaviour", icon: ClipboardList },
   { href: "/data-quality", label: "Data Quality & Linkage", icon: Database },
+  { href: "/problems", label: "Problems", icon: OctagonAlert },
+  { href: "/findings", label: "Findings", icon: Lightbulb },
 ]
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {

@@ -12,6 +12,7 @@ const TEAM = [
   { name: "Anjali Yadav", phone: "+91 95552 76471" },
   { name: "Kalluri Aasritha", phone: "+91 90529 47429" },
   { name: "Keshav Dubey", phone: "+91 92664 66987" },
+  { name: "Kavyanth", phone: "+91 96182 71171" },
 ]
 
 function initials(name: string): string {
