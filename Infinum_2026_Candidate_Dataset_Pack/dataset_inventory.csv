@@ -1,0 +1,14 @@
+﻿file,records_excluding_header
+patient_360_reference.csv,5000
+teleconsultations.csv,5516
+ncd_screening.csv,4748
+prescriptions.csv,5151
+medicine_dispensing.csv,3756
+medicine_stock_status.csv,1296
+lab_tests.csv,2005
+followup_visits.csv,2575
+visit_history.csv,13061
+outreach_actions.csv,6088
+facility_reference.csv,27
+geography_reference.csv,36
+episode_outcomes.csv,5516

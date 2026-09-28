@@ -1,0 +1,167 @@
+﻿file,field,description,competition_note
+patient_360_reference.csv,patient_id,Canonical synthetic patient identifier in the reference entity table.,
+patient_360_reference.csv,canonical_name,Canonical synthetic patient name.,
+patient_360_reference.csv,gender,Synthetic recorded sex/gender marker used for linkage context.,
+patient_360_reference.csv,date_of_birth,Canonical synthetic date of birth.,
+patient_360_reference.csv,age_as_of_2026,Age derived for 2026.,
+patient_360_reference.csv,masked_mobile,Canonical phone with only last 4 digits visible.,
+patient_360_reference.csv,village_id,Canonical synthetic village identifier.,
+patient_360_reference.csv,village,Village name; source tables may contain formatting/spelling noise.,May contain deliberate source-system noise.
+patient_360_reference.csv,block,Administrative block.,
+patient_360_reference.csv,district,Synthetic-use district context.,
+patient_360_reference.csv,preferred_language,Preferred interaction language.,
+patient_360_reference.csv,known_ncd_status,Reference NCD status.,
+patient_360_reference.csv,vulnerability_group,Synthetic operational vulnerability segment.,
+patient_360_reference.csv,household_id,Synthetic household grouping identifier.,
+teleconsultations.csv,teleconsult_id,Unique teleconsultation identifier.,
+teleconsultations.csv,tele_source_patient_id,Patient identifier used only by teleconsult system.,No direct crosswalk is supplied to candidates.
+teleconsultations.csv,patient_name,Source-record patient name; deliberately noisy.,May contain deliberate source-system noise.
+teleconsultations.csv,gender,Synthetic recorded sex/gender marker used for linkage context.,
+teleconsultations.csv,age,Source-record age; may differ slightly from reference.,May contain deliberate source-system noise.
+teleconsultations.csv,mobile,"Source-record phone; may be missing, mistyped or formatted differently.",May contain deliberate source-system noise.
+teleconsultations.csv,village,Village name; source tables may contain formatting/spelling noise.,May contain deliberate source-system noise.
+teleconsultations.csv,block,Administrative block.,
+teleconsultations.csv,district,Synthetic-use district context.,
+teleconsultations.csv,consult_date,Date of teleconsultation.,
+teleconsultations.csv,facility_id,Synthetic facility identifier.,
+teleconsultations.csv,chief_complaint,Broad presenting complaint.,
+teleconsultations.csv,diagnosis_group,Broad diagnosis category.,
+teleconsultations.csv,consult_mode,Audio/video/assisted consultation mode.,
+teleconsultations.csv,duration_min,Consultation duration in minutes.,
+teleconsultations.csv,medicine_advised,Whether medicine was recommended.,
+teleconsultations.csv,test_advised,Whether diagnostic testing was recommended.,
+teleconsultations.csv,review_advised,Whether a review visit was recommended.,
+teleconsultations.csv,review_due_days,Recommended review interval in days.,
+teleconsultations.csv,distance_to_facility_km,Approximate synthetic road-independent distance proxy.,
+teleconsultations.csv,preferred_language,Preferred interaction language.,
+teleconsultations.csv,connectivity_quality,Recorded connectivity quality during consultation.,
+teleconsultations.csv,consult_status,Consultation completion status.,
+ncd_screening.csv,ncd_record_id,Unique NCD screening record.,
+ncd_screening.csv,ncd_source_patient_id,Patient ID used by NCD system.,No direct crosswalk is supplied to candidates.
+ncd_screening.csv,patient_name,Source-record patient name; deliberately noisy.,May contain deliberate source-system noise.
+ncd_screening.csv,gender,Synthetic recorded sex/gender marker used for linkage context.,
+ncd_screening.csv,age,Source-record age; may differ slightly from reference.,May contain deliberate source-system noise.
+ncd_screening.csv,mobile,"Source-record phone; may be missing, mistyped or formatted differently.",May contain deliberate source-system noise.
+ncd_screening.csv,village,Village name; source tables may contain formatting/spelling noise.,May contain deliberate source-system noise.
+ncd_screening.csv,block,Administrative block.,
+ncd_screening.csv,district,Synthetic-use district context.,
+ncd_screening.csv,screening_date,NCD screening date.,
+ncd_screening.csv,screening_type,Where/how NCD screening occurred.,
+ncd_screening.csv,systolic_bp,Synthetic systolic BP value.,
+ncd_screening.csv,diastolic_bp,Synthetic diastolic BP value.,
+ncd_screening.csv,random_glucose_mg_dl,Synthetic random blood glucose.,
+ncd_screening.csv,bmi,Synthetic BMI.,
+ncd_screening.csv,ncd_status,NCD condition recorded in the screening system.,
+ncd_screening.csv,control_status,Synthetic control category.,
+ncd_screening.csv,next_followup_due,Recommended next NCD follow-up date.,
+prescriptions.csv,prescription_id,Prescription identifier.,
+prescriptions.csv,prescription_line_id,Prescription medicine-line identifier.,
+prescriptions.csv,rx_source_patient_id,Patient ID used by prescription system.,No direct crosswalk is supplied to candidates.
+prescriptions.csv,patient_name,Source-record patient name; deliberately noisy.,May contain deliberate source-system noise.
+prescriptions.csv,mobile,"Source-record phone; may be missing, mistyped or formatted differently.",May contain deliberate source-system noise.
+prescriptions.csv,village,Village name; source tables may contain formatting/spelling noise.,May contain deliberate source-system noise.
+prescriptions.csv,prescription_date,Prescription date.,
+prescriptions.csv,teleconsult_id,Unique teleconsultation identifier.,
+prescriptions.csv,medicine_name,Generic synthetic medicine name.,
+prescriptions.csv,medicine_class,Medicine therapeutic class.,
+prescriptions.csv,frequency,Simplified dose frequency.,
+prescriptions.csv,days_prescribed,Intended number of treatment days.,
+prescriptions.csv,route,Administration route.,
+prescriptions.csv,facility_id,Synthetic facility identifier.,
+medicine_dispensing.csv,dispense_id,Medicine dispensing event identifier.,
+medicine_dispensing.csv,pharm_source_patient_id,Patient ID used by pharmacy register.,No direct crosswalk is supplied to candidates.
+medicine_dispensing.csv,patient_name,Source-record patient name; deliberately noisy.,May contain deliberate source-system noise.
+medicine_dispensing.csv,mobile,"Source-record phone; may be missing, mistyped or formatted differently.",May contain deliberate source-system noise.
+medicine_dispensing.csv,village,Village name; source tables may contain formatting/spelling noise.,May contain deliberate source-system noise.
+medicine_dispensing.csv,dispense_date,Date medicine was collected/attempted.,
+medicine_dispensing.csv,prescription_id,Prescription identifier.,
+medicine_dispensing.csv,medicine_name,Generic synthetic medicine name.,
+medicine_dispensing.csv,prescribed_qty_proxy,Simplified intended quantity proxy.,
+medicine_dispensing.csv,dispensed_qty,Quantity actually dispensed.,
+medicine_dispensing.csv,partial_fill,1 when only part of intended supply was dispensed.,
+medicine_dispensing.csv,stockout_flag,1 when stock-out affected the dispensing attempt.,
+medicine_dispensing.csv,facility_id,Synthetic facility identifier.,
+medicine_dispensing.csv,dispense_status,Dispensed/partial/not dispensed due to stock.,
+medicine_stock_status.csv,stock_record_id,Facility medicine stock snapshot identifier.,
+medicine_stock_status.csv,facility_id,Synthetic facility identifier.,
+medicine_stock_status.csv,snapshot_month,Month of stock snapshot.,
+medicine_stock_status.csv,medicine_name,Generic synthetic medicine name.,
+medicine_stock_status.csv,opening_stock,Opening stock units.,
+medicine_stock_status.csv,received_qty,Units received during the month.,
+medicine_stock_status.csv,dispensed_qty_month,Units dispensed in the stock ledger month.,
+medicine_stock_status.csv,closing_stock,Closing stock units.,
+medicine_stock_status.csv,stockout_flag_month,1 if a stock-out occurred in the month.,
+medicine_stock_status.csv,stockout_days,Number of stock-out days during the month.,
+medicine_stock_status.csv,stock_status,Adequate/Low stock/Reorder raised.,
+lab_tests.csv,lab_record_id,Lab/test record identifier.,
+lab_tests.csv,lab_source_patient_id,Patient ID used by lab system.,No direct crosswalk is supplied to candidates.
+lab_tests.csv,patient_name,Source-record patient name; deliberately noisy.,May contain deliberate source-system noise.
+lab_tests.csv,mobile,"Source-record phone; may be missing, mistyped or formatted differently.",May contain deliberate source-system noise.
+lab_tests.csv,village,Village name; source tables may contain formatting/spelling noise.,May contain deliberate source-system noise.
+lab_tests.csv,order_date,Test order date.,
+lab_tests.csv,test_name,Ordered diagnostic test.,
+lab_tests.csv,sample_date,Sample/test date if completed.,
+lab_tests.csv,result_date,Result date if available.,
+lab_tests.csv,result_flag,Simplified normal/abnormal/critical result category.,
+lab_tests.csv,test_status,Available or Ordered-not-completed.,
+lab_tests.csv,facility_id,Synthetic facility identifier.,
+lab_tests.csv,lab_type,Facility/hub/external lab source.,
+followup_visits.csv,visit_id,Visit/encounter identifier.,
+followup_visits.csv,visit_source_patient_id,Patient ID used by visit register.,No direct crosswalk is supplied to candidates.
+followup_visits.csv,patient_name,Source-record patient name; deliberately noisy.,May contain deliberate source-system noise.
+followup_visits.csv,mobile,"Source-record phone; may be missing, mistyped or formatted differently.",May contain deliberate source-system noise.
+followup_visits.csv,village,Village name; source tables may contain formatting/spelling noise.,May contain deliberate source-system noise.
+followup_visits.csv,visit_date,Encounter date.,
+followup_visits.csv,visit_type,Encounter type.,
+followup_visits.csv,facility_id,Synthetic facility identifier.,
+followup_visits.csv,episode_id,Synthetic post-teleconsult care-journey identifier.,
+followup_visits.csv,clinical_status,Simplified encounter outcome.,
+followup_visits.csv,referral_flag,Whether referral/escalation occurred.,
+visit_history.csv,visit_id,Visit/encounter identifier.,
+visit_history.csv,visit_source_patient_id,Patient ID used by visit register.,No direct crosswalk is supplied to candidates.
+visit_history.csv,patient_name,Source-record patient name; deliberately noisy.,May contain deliberate source-system noise.
+visit_history.csv,mobile,"Source-record phone; may be missing, mistyped or formatted differently.",May contain deliberate source-system noise.
+visit_history.csv,village,Village name; source tables may contain formatting/spelling noise.,May contain deliberate source-system noise.
+visit_history.csv,visit_date,Encounter date.,
+visit_history.csv,visit_type,Encounter type.,
+visit_history.csv,facility_id,Synthetic facility identifier.,
+visit_history.csv,episode_id,Synthetic post-teleconsult care-journey identifier.,
+visit_history.csv,clinical_status,Simplified encounter outcome.,
+visit_history.csv,referral_flag,Whether referral/escalation occurred.,
+outreach_actions.csv,outreach_id,ASHA/CHO outreach event identifier.,
+outreach_actions.csv,outreach_source_patient_id,Patient ID used by outreach register.,No direct crosswalk is supplied to candidates.
+outreach_actions.csv,patient_name,Source-record patient name; deliberately noisy.,May contain deliberate source-system noise.
+outreach_actions.csv,mobile,"Source-record phone; may be missing, mistyped or formatted differently.",May contain deliberate source-system noise.
+outreach_actions.csv,village,Village name; source tables may contain formatting/spelling noise.,May contain deliberate source-system noise.
+outreach_actions.csv,action_date,Outreach date.,
+outreach_actions.csv,action_method,Phone/home visit/message/village health day reminder.,
+outreach_actions.csv,contact_outcome,Outcome of outreach attempt.,
+outreach_actions.csv,cadre,ASHA or CHO.,
+outreach_actions.csv,facility_id,Synthetic facility identifier.,
+outreach_actions.csv,episode_id,Synthetic post-teleconsult care-journey identifier.,
+outreach_actions.csv,followup_reason,Reason for outreach.,
+facility_reference.csv,facility_id,Synthetic facility identifier.,
+facility_reference.csv,facility_name,Synthetic facility name.,
+facility_reference.csv,facility_type,PHC or HWC.,
+facility_reference.csv,district,Synthetic-use district context.,
+facility_reference.csv,block,Administrative block.,
+facility_reference.csv,latitude,Synthetic latitude for competition visualization only.,
+facility_reference.csv,longitude,Synthetic longitude for competition visualization only.,
+facility_reference.csv,network_context,Facility connectivity context.,
+facility_reference.csv,cho_count,Synthetic number of CHOs.,
+facility_reference.csv,asha_linked_count,Synthetic number of linked ASHAs.,
+geography_reference.csv,village_id,Canonical synthetic village identifier.,
+geography_reference.csv,village,Village name; source tables may contain formatting/spelling noise.,May contain deliberate source-system noise.
+geography_reference.csv,district,Synthetic-use district context.,
+geography_reference.csv,block,Administrative block.,
+geography_reference.csv,latitude,Synthetic latitude for competition visualization only.,
+geography_reference.csv,longitude,Synthetic longitude for competition visualization only.,
+geography_reference.csv,population,Synthetic village population.,
+geography_reference.csv,road_access,Synthetic access condition.,
+geography_reference.csv,mobile_connectivity,Synthetic village connectivity category.,
+episode_outcomes.csv,episode_id,Synthetic post-teleconsult care-journey identifier.,
+episode_outcomes.csv,teleconsult_id,Unique teleconsultation identifier.,
+episode_outcomes.csv,consult_date,Date of teleconsultation.,
+episode_outcomes.csv,cohort,DEVELOPMENT or EVALUATION.,
+episode_outcomes.csv,lost_to_followup_label,Development label: 1 if any required care component remained incomplete; 0 otherwise.,Blank for EVALUATION cohort.
+episode_outcomes.csv,dropout_stage_label,Development label for first unresolved stage; blank for evaluation cohort.,Blank for EVALUATION cohort.
