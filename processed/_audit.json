@@ -1,0 +1,3275 @@
+{
+  "patient_360_reference.csv": {
+    "rows": 5000,
+    "cols": 14,
+    "columns": [
+      "patient_id",
+      "canonical_name",
+      "gender",
+      "date_of_birth",
+      "age_as_of_2026",
+      "masked_mobile",
+      "village_id",
+      "village",
+      "block",
+      "district",
+      "preferred_language",
+      "known_ncd_status",
+      "vulnerability_group",
+      "household_id"
+    ],
+    "duplicate_full_rows": 0,
+    "column_profile": {
+      "patient_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 5000,
+        "top_values": {
+          "P000001": 1,
+          "P000002": 1,
+          "P000003": 1,
+          "P000004": 1,
+          "P000005": 1,
+          "P000006": 1,
+          "P000007": 1,
+          "P000008": 1
+        }
+      },
+      "canonical_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 798,
+        "top_values": {
+          "Anitha Mallaiah": 15,
+          "Rajesh Yadav": 15,
+          "Vinod Narsimha": 14,
+          "Raju Shekar": 14,
+          "Kavitha Das": 13,
+          "Jyothi Mallaiah": 13,
+          "Swathi Yadav": 13,
+          "Lalitha Krishna": 13
+        }
+      },
+      "gender": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "F": 2597,
+          "M": 2403
+        },
+        "value_counts": {
+          "F": 2597,
+          "M": 2403
+        }
+      },
+      "date_of_birth": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4373,
+        "top_values": {
+          "1988-09-18": 4,
+          "2008-03-01": 4,
+          "1980-10-21": 4,
+          "1986-01-07": 4,
+          "1979-08-22": 3,
+          "2008-04-07": 3,
+          "1960-01-22": 3,
+          "1964-07-27": 3
+        },
+        "date_range": {
+          "parseable_pct": 100.0,
+          "min_date": "1938-01-24 00:00:00",
+          "max_date": "2008-12-28 00:00:00"
+        }
+      },
+      "age_as_of_2026": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 71,
+        "top_values": {
+          "18": 157,
+          "40": 129,
+          "52": 128,
+          "50": 128,
+          "57": 125,
+          "51": 122,
+          "48": 121,
+          "42": 121
+        }
+      },
+      "masked_mobile": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3948,
+        "top_values": {
+          "XXXXXX5139": 5,
+          "XXXXXX2628": 4,
+          "XXXXXX6888": 4,
+          "XXXXXX6054": 4,
+          "XXXXXX8410": 4,
+          "XXXXXX2354": 4,
+          "XXXXXX2383": 4,
+          "XXXXXX0567": 4
+        }
+      },
+      "village_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 36,
+        "top_values": {
+          "VIL0031": 164,
+          "VIL0008": 159,
+          "VIL0022": 157,
+          "VIL0021": 156,
+          "VIL0019": 154,
+          "VIL0030": 153,
+          "VIL0013": 152,
+          "VIL0009": 151
+        }
+      },
+      "village": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 36,
+        "top_values": {
+          "Jharasangam": 164,
+          "Bodajanampet": 159,
+          "Nomula": 157,
+          "Nakrekal": 156,
+          "Kummarikunta": 154,
+          "Mogudampally": 153,
+          "Devarakonda": 152,
+          "Midjil": 151
+        }
+      },
+      "block": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 9,
+        "top_values": {
+          "Zaheerabad": 603,
+          "Nakrekal": 587,
+          "Midjil": 571,
+          "Devarakonda": 566,
+          "Balanagar": 551,
+          "Narayankhed": 541,
+          "Patancheru": 537,
+          "Chandur": 523
+        },
+        "value_counts": {
+          "Zaheerabad": 603,
+          "Nakrekal": 587,
+          "Midjil": 571,
+          "Devarakonda": 566,
+          "Balanagar": 551,
+          "Narayankhed": 541,
+          "Patancheru": 537,
+          "Chandur": 523,
+          "Jadcherla": 521
+        }
+      },
+      "district": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "Sangareddy": 1681,
+          "Nalgonda": 1676,
+          "Mahabubnagar": 1643
+        },
+        "value_counts": {
+          "Sangareddy": 1681,
+          "Nalgonda": 1676,
+          "Mahabubnagar": 1643
+        }
+      },
+      "preferred_language": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "Telugu": 4329,
+          "Urdu": 454,
+          "English": 217
+        },
+        "value_counts": {
+          "Telugu": 4329,
+          "Urdu": 454,
+          "English": 217
+        }
+      },
+      "known_ncd_status": {
+        "dtype": "str",
+        "null_count": 2134,
+        "null_pct": 42.68,
+        "n_unique": 3,
+        "top_values": {
+          "Hypertension": 1305,
+          "Diabetes": 879,
+          "Hypertension+Diabetes": 682
+        },
+        "value_counts": {
+          "Hypertension": 1305,
+          "Diabetes": 879,
+          "Hypertension+Diabetes": 682
+        }
+      },
+      "vulnerability_group": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 5,
+        "top_values": {
+          "General": 3507,
+          "Low digital access": 614,
+          "Elderly living alone": 350,
+          "Mobility limitation": 273,
+          "Seasonal migrant": 256
+        },
+        "value_counts": {
+          "General": 3507,
+          "Low digital access": 614,
+          "Elderly living alone": 350,
+          "Mobility limitation": 273,
+          "Seasonal migrant": 256
+        }
+      },
+      "household_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2324,
+        "top_values": {
+          "HH00047": 8,
+          "HH02752": 8,
+          "HH00223": 7,
+          "HH01629": 7,
+          "HH02450": 7,
+          "HH02692": 7,
+          "HH01127": 7,
+          "HH00448": 7
+        }
+      }
+    }
+  },
+  "teleconsultations.csv": {
+    "rows": 5516,
+    "cols": 23,
+    "columns": [
+      "teleconsult_id",
+      "tele_source_patient_id",
+      "patient_name",
+      "gender",
+      "age",
+      "mobile",
+      "village",
+      "block",
+      "district",
+      "consult_date",
+      "facility_id",
+      "chief_complaint",
+      "diagnosis_group",
+      "consult_mode",
+      "duration_min",
+      "medicine_advised",
+      "test_advised",
+      "review_advised",
+      "review_due_days",
+      "distance_to_facility_km",
+      "preferred_language",
+      "connectivity_quality",
+      "consult_status"
+    ],
+    "duplicate_full_rows": 0,
+    "column_profile": {
+      "teleconsult_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 5516,
+        "top_values": {
+          "TC0000001": 1,
+          "TC0000002": 1,
+          "TC0000003": 1,
+          "TC0000004": 1,
+          "TC0000005": 1,
+          "TC0000006": 1,
+          "TC0000007": 1,
+          "TC0000008": 1
+        }
+      },
+      "tele_source_patient_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4231,
+        "top_values": {
+          "TEP0000008": 3,
+          "TEP0000081": 3,
+          "TEP0000093": 3,
+          "TEP0000105": 3,
+          "TEP0000115": 3,
+          "TEP0000126": 3,
+          "TEP0000137": 3,
+          "TEP0000142": 3
+        }
+      },
+      "patient_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 1282,
+        "top_values": {
+          "Anitha Mallaiah": 17,
+          "Praveen Laxman": 16,
+          "Shankar Narsimha": 16,
+          "Jyothi Krishna": 16,
+          "Kiran Rao": 15,
+          "Raju Shekar": 15,
+          "Mounika Yadav": 15,
+          "Bhavani Das": 15
+        }
+      },
+      "gender": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "F": 2878,
+          "M": 2638
+        },
+        "value_counts": {
+          "F": 2878,
+          "M": 2638
+        }
+      },
+      "age": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 73,
+        "top_values": {
+          "50": 153,
+          "18": 149,
+          "40": 146,
+          "42": 141,
+          "48": 134,
+          "52": 133,
+          "54": 130,
+          "51": 130
+        }
+      },
+      "mobile": {
+        "dtype": "str",
+        "null_count": 438,
+        "null_pct": 7.94,
+        "n_unique": 4287,
+        "top_values": {
+          "9308761512": 3,
+          "9018785075": 3,
+          "9442198767": 3,
+          "9962592192": 3,
+          "9444621490": 3,
+          "9358032354": 3,
+          "9753129253": 3,
+          "9815927753": 3
+        }
+      },
+      "village": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 113,
+        "top_values": {
+          "Jharasangam": 172,
+          "Kummarikunta": 160,
+          "Midjil": 156,
+          "Bodajanampet": 154,
+          "Zaheerabad": 149,
+          "Velpula": 148,
+          "Kohir": 145,
+          "Devarakonda": 144
+        }
+      },
+      "block": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 9,
+        "top_values": {
+          "Zaheerabad": 680,
+          "Midjil": 649,
+          "Devarakonda": 636,
+          "Nakrekal": 615,
+          "Chandur": 604,
+          "Balanagar": 597,
+          "Narayankhed": 588,
+          "Jadcherla": 576
+        },
+        "value_counts": {
+          "Zaheerabad": 680,
+          "Midjil": 649,
+          "Devarakonda": 636,
+          "Nakrekal": 615,
+          "Chandur": 604,
+          "Balanagar": 597,
+          "Narayankhed": 588,
+          "Jadcherla": 576,
+          "Patancheru": 571
+        }
+      },
+      "district": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "Nalgonda": 1855,
+          "Sangareddy": 1839,
+          "Mahabubnagar": 1822
+        },
+        "value_counts": {
+          "Nalgonda": 1855,
+          "Sangareddy": 1839,
+          "Mahabubnagar": 1822
+        }
+      },
+      "consult_date": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 227,
+        "top_values": {
+          "2026-07-30": 43,
+          "2026-07-15": 43,
+          "2026-08-11": 41,
+          "2026-08-13": 39,
+          "2026-08-15": 39,
+          "2026-07-03": 37,
+          "2026-07-21": 37,
+          "2026-08-02": 37
+        },
+        "date_range": {
+          "parseable_pct": 100.0,
+          "min_date": "2026-01-01 00:00:00",
+          "max_date": "2026-08-15 00:00:00"
+        }
+      },
+      "facility_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 27,
+        "top_values": {
+          "FAC023": 238,
+          "FAC024": 222,
+          "FAC009": 221,
+          "FAC022": 220,
+          "FAC006": 218,
+          "FAC007": 218,
+          "FAC012": 218,
+          "FAC021": 218
+        }
+      },
+      "chief_complaint": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 8,
+        "top_values": {
+          "Cough": 730,
+          "Fever": 715,
+          "Headache": 709,
+          "Abdominal discomfort": 694,
+          "Body pain": 688,
+          "Routine NCD review": 670,
+          "Skin complaint": 663,
+          "Dizziness": 647
+        },
+        "value_counts": {
+          "Cough": 730,
+          "Fever": 715,
+          "Headache": 709,
+          "Abdominal discomfort": 694,
+          "Body pain": 688,
+          "Routine NCD review": 670,
+          "Skin complaint": 663,
+          "Dizziness": 647
+        }
+      },
+      "diagnosis_group": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 9,
+        "top_values": {
+          "Hypertension": 990,
+          "Other": 812,
+          "Fever/Infection": 713,
+          "Diabetes": 712,
+          "Musculoskeletal": 566,
+          "Dermatology": 550,
+          "Respiratory": 421,
+          "Hypertension+Diabetes": 381
+        },
+        "value_counts": {
+          "Hypertension": 990,
+          "Other": 812,
+          "Fever/Infection": 713,
+          "Diabetes": 712,
+          "Musculoskeletal": 566,
+          "Dermatology": 550,
+          "Respiratory": 421,
+          "Hypertension+Diabetes": 381,
+          "Gastrointestinal": 371
+        }
+      },
+      "consult_mode": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "Assisted video": 1873,
+          "Audio": 1823,
+          "Video": 1820
+        },
+        "value_counts": {
+          "Assisted video": 1873,
+          "Audio": 1823,
+          "Video": 1820
+        }
+      },
+      "duration_min": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 18,
+        "top_values": {
+          "9": 328,
+          "21": 325,
+          "16": 320,
+          "13": 319,
+          "22": 318,
+          "18": 315,
+          "17": 313,
+          "20": 311
+        }
+      },
+      "medicine_advised": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "Yes": 4209,
+          "No": 1307
+        },
+        "value_counts": {
+          "Yes": 4209,
+          "No": 1307
+        }
+      },
+      "test_advised": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "No": 3511,
+          "Yes": 2005
+        },
+        "value_counts": {
+          "No": 3511,
+          "Yes": 2005
+        }
+      },
+      "review_advised": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "Yes": 3753,
+          "No": 1763
+        },
+        "value_counts": {
+          "Yes": 3753,
+          "No": 1763
+        }
+      },
+      "review_due_days": {
+        "dtype": "str",
+        "null_count": 1763,
+        "null_pct": 31.96,
+        "n_unique": 4,
+        "top_values": {
+          "14": 946,
+          "21": 940,
+          "30": 940,
+          "7": 927
+        },
+        "value_counts": {
+          "14": 946,
+          "21": 940,
+          "30": 940,
+          "7": 927
+        }
+      },
+      "distance_to_facility_km": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 92,
+        "top_values": {
+          "25.4": 153,
+          "18.7": 126,
+          "33.3": 118,
+          "26.6": 117,
+          "25.7": 108,
+          "12.6": 106,
+          "7.3": 105,
+          "12.8": 105
+        }
+      },
+      "preferred_language": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "Telugu": 4755,
+          "Urdu": 514,
+          "English": 247
+        },
+        "value_counts": {
+          "Telugu": 4755,
+          "Urdu": 514,
+          "English": 247
+        }
+      },
+      "connectivity_quality": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "Fair": 1878,
+          "Good": 1861,
+          "Poor": 1777
+        },
+        "value_counts": {
+          "Fair": 1878,
+          "Good": 1861,
+          "Poor": 1777
+        }
+      },
+      "consult_status": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 1,
+        "top_values": {
+          "Completed": 5516
+        },
+        "value_counts": {
+          "Completed": 5516
+        }
+      }
+    }
+  },
+  "ncd_screening.csv": {
+    "rows": 4748,
+    "cols": 18,
+    "columns": [
+      "ncd_record_id",
+      "ncd_source_patient_id",
+      "patient_name",
+      "gender",
+      "age",
+      "mobile",
+      "village",
+      "block",
+      "district",
+      "screening_date",
+      "screening_type",
+      "systolic_bp",
+      "diastolic_bp",
+      "random_glucose_mg_dl",
+      "bmi",
+      "ncd_status",
+      "control_status",
+      "next_followup_due"
+    ],
+    "duplicate_full_rows": 0,
+    "column_profile": {
+      "ncd_record_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4748,
+        "top_values": {
+          "NCDR0000001": 1,
+          "NCDR0000002": 1,
+          "NCDR0000003": 1,
+          "NCDR0000004": 1,
+          "NCDR0000005": 1,
+          "NCDR0000006": 1,
+          "NCDR0000007": 1,
+          "NCDR0000008": 1
+        }
+      },
+      "ncd_source_patient_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3589,
+        "top_values": {
+          "NCP0000007": 3,
+          "NCP0000022": 3,
+          "NCP0000082": 3,
+          "NCP0000088": 3,
+          "NCP0000094": 3,
+          "NCP0000155": 3,
+          "NCP0000165": 3,
+          "NCP0000176": 3
+        }
+      },
+      "patient_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 1243,
+        "top_values": {
+          "Renuka Devi": 17,
+          "Santosh Rao": 15,
+          "Vinod Narsimha": 14,
+          "Anitha Mallaiah": 13,
+          "Deepika Rao": 13,
+          "Mounika Yadav": 13,
+          "Vinod Begum": 13,
+          "Shobha Naik": 13
+        }
+      },
+      "gender": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "F": 2444,
+          "M": 2304
+        },
+        "value_counts": {
+          "F": 2444,
+          "M": 2304
+        }
+      },
+      "age": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 73,
+        "top_values": {
+          "54": 132,
+          "18": 128,
+          "40": 128,
+          "49": 125,
+          "46": 124,
+          "50": 122,
+          "48": 121,
+          "42": 120
+        }
+      },
+      "mobile": {
+        "dtype": "str",
+        "null_count": 400,
+        "null_pct": 8.42,
+        "n_unique": 3617,
+        "top_values": {
+          "9512351181": 3,
+          "9808768740": 3,
+          "9441390239": 3,
+          "9531635484": 3,
+          "9138023290": 3,
+          "9058492289": 3,
+          "9066229866": 3,
+          "9416153267": 3
+        }
+      },
+      "village": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 113,
+        "top_values": {
+          "Bodajanampet": 140,
+          "Kohir": 136,
+          "Jharasangam": 133,
+          "Velpula": 133,
+          "Midjil": 129,
+          "Vemula": 128,
+          "Indresham": 125,
+          "Devarakonda": 125
+        }
+      },
+      "block": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 9,
+        "top_values": {
+          "Midjil": 567,
+          "Zaheerabad": 561,
+          "Balanagar": 535,
+          "Nakrekal": 532,
+          "Devarakonda": 529,
+          "Patancheru": 514,
+          "Narayankhed": 511,
+          "Chandur": 503
+        },
+        "value_counts": {
+          "Midjil": 567,
+          "Zaheerabad": 561,
+          "Balanagar": 535,
+          "Nakrekal": 532,
+          "Devarakonda": 529,
+          "Patancheru": 514,
+          "Narayankhed": 511,
+          "Chandur": 503,
+          "Jadcherla": 496
+        }
+      },
+      "district": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "Mahabubnagar": 1598,
+          "Sangareddy": 1586,
+          "Nalgonda": 1564
+        },
+        "value_counts": {
+          "Mahabubnagar": 1598,
+          "Sangareddy": 1586,
+          "Nalgonda": 1564
+        }
+      },
+      "screening_date": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 410,
+        "top_values": {
+          "2026-04-18": 25,
+          "2026-02-09": 23,
+          "2026-02-05": 23,
+          "2025-10-02": 22,
+          "2025-10-13": 22,
+          "2025-11-14": 22,
+          "2026-01-04": 22,
+          "2025-09-30": 22
+        },
+        "date_range": {
+          "parseable_pct": 100.0,
+          "min_date": "2025-07-01 00:00:00",
+          "max_date": "2026-08-15 00:00:00"
+        }
+      },
+      "screening_type": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "Community screening": 1608,
+          "Opportunistic screening": 1602,
+          "HWC screening": 1538
+        },
+        "value_counts": {
+          "Community screening": 1608,
+          "Opportunistic screening": 1602,
+          "HWC screening": 1538
+        }
+      },
+      "systolic_bp": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 86,
+        "top_values": {
+          "142": 112,
+          "140": 107,
+          "139": 99,
+          "141": 97,
+          "149": 96,
+          "143": 95,
+          "150": 93,
+          "145": 91
+        }
+      },
+      "diastolic_bp": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 49,
+        "top_values": {
+          "89": 163,
+          "88": 162,
+          "85": 161,
+          "92": 161,
+          "96": 161,
+          "84": 159,
+          "95": 159,
+          "86": 154
+        }
+      },
+      "random_glucose_mg_dl": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 253,
+        "top_values": {
+          "162": 64,
+          "148": 51,
+          "152": 49,
+          "149": 48,
+          "159": 48,
+          "154": 46,
+          "99": 46,
+          "155": 46
+        }
+      },
+      "bmi": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 161,
+        "top_values": {
+          "26.6": 46,
+          "21.6": 45,
+          "30.0": 42,
+          "33.6": 41,
+          "28.1": 41,
+          "33.1": 41,
+          "26.0": 41,
+          "24.5": 41
+        }
+      },
+      "ncd_status": {
+        "dtype": "str",
+        "null_count": 970,
+        "null_pct": 20.43,
+        "n_unique": 3,
+        "top_values": {
+          "Hypertension": 1717,
+          "Diabetes": 1150,
+          "Hypertension+Diabetes": 911
+        },
+        "value_counts": {
+          "Hypertension": 1717,
+          "Diabetes": 1150,
+          "Hypertension+Diabetes": 911
+        }
+      },
+      "control_status": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4,
+        "top_values": {
+          "Uncontrolled": 1274,
+          "Controlled": 1259,
+          "Borderline": 1245,
+          "Not diagnosed": 970
+        },
+        "value_counts": {
+          "Uncontrolled": 1274,
+          "Controlled": 1259,
+          "Borderline": 1245,
+          "Not diagnosed": 970
+        }
+      },
+      "next_followup_due": {
+        "dtype": "str",
+        "null_count": 970,
+        "null_pct": 20.43,
+        "n_unique": 455,
+        "top_values": {
+          "2026-07-16": 20,
+          "2026-04-23": 19,
+          "2026-06-17": 19,
+          "2026-01-25": 18,
+          "2026-07-14": 18,
+          "2026-03-30": 18,
+          "2026-02-15": 17,
+          "2026-05-06": 17
+        },
+        "date_range": {
+          "parseable_pct": 79.57,
+          "min_date": "2025-07-31 00:00:00",
+          "max_date": "2026-11-13 00:00:00"
+        }
+      }
+    }
+  },
+  "prescriptions.csv": {
+    "rows": 5151,
+    "cols": 14,
+    "columns": [
+      "prescription_id",
+      "prescription_line_id",
+      "rx_source_patient_id",
+      "patient_name",
+      "mobile",
+      "village",
+      "prescription_date",
+      "teleconsult_id",
+      "medicine_name",
+      "medicine_class",
+      "frequency",
+      "days_prescribed",
+      "route",
+      "facility_id"
+    ],
+    "duplicate_full_rows": 0,
+    "column_profile": {
+      "prescription_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4209,
+        "top_values": {
+          "RX0000314": 3,
+          "RX0000427": 3,
+          "RX0000458": 3,
+          "RX0000476": 3,
+          "RX0000902": 3,
+          "RX0001071": 3,
+          "RX0001079": 3,
+          "RX0001296": 3
+        }
+      },
+      "prescription_line_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 5151,
+        "top_values": {
+          "RX0000001-1": 1,
+          "RX0000002-1": 1,
+          "RX0000003-1": 1,
+          "RX0000004-1": 1,
+          "RX0000004-2": 1,
+          "RX0000006-1": 1,
+          "RX0000006-2": 1,
+          "RX0000008-1": 1
+        }
+      },
+      "rx_source_patient_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3449,
+        "top_values": {
+          "RXP0000116": 6,
+          "RXP0001132": 6,
+          "RXP0000311": 5,
+          "RXP0000899": 5,
+          "RXP0001153": 5,
+          "RXP0001528": 5,
+          "RXP0001584": 5,
+          "RXP0001752": 5
+        }
+      },
+      "patient_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 1267,
+        "top_values": {
+          "Bhavani Das": 19,
+          "Jyothi Krishna": 19,
+          "Padma Shekar": 16,
+          "Rajesh Jangam": 15,
+          "Arun Begum": 15,
+          "Anitha Naik": 15,
+          "Bhavani Mudiraj": 14,
+          "Anil Reddy": 14
+        }
+      },
+      "mobile": {
+        "dtype": "str",
+        "null_count": 409,
+        "null_pct": 7.94,
+        "n_unique": 3666,
+        "top_values": {
+          "9835793200": 5,
+          "9133168513": 5,
+          "9035178578": 5,
+          "9890943448": 5,
+          "9805956460": 5,
+          "9341776266": 5,
+          "9474992238": 4,
+          "9442198767": 4
+        }
+      },
+      "village": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 113,
+        "top_values": {
+          "Jharasangam": 158,
+          "Kummarikunta": 158,
+          "Devarakonda": 145,
+          "Velpula": 142,
+          "Zaheerabad": 141,
+          "Kalher": 137,
+          "Mogudampally": 136,
+          "Kohir": 135
+        }
+      },
+      "prescription_date": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 227,
+        "top_values": {
+          "2026-07-15": 43,
+          "2026-08-13": 42,
+          "2026-07-03": 38,
+          "2026-08-11": 37,
+          "2026-07-16": 37,
+          "2026-08-15": 36,
+          "2026-07-25": 36,
+          "2026-07-30": 35
+        },
+        "date_range": {
+          "parseable_pct": 100.0,
+          "min_date": "2026-01-01 00:00:00",
+          "max_date": "2026-08-15 00:00:00"
+        }
+      },
+      "teleconsult_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4209,
+        "top_values": {
+          "TC0000344": 3,
+          "TC0000468": 3,
+          "TC0000498": 3,
+          "TC0000515": 3,
+          "TC0000987": 3,
+          "TC0001189": 3,
+          "TC0001195": 3,
+          "TC0001439": 3
+        }
+      },
+      "medicine_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 6,
+        "top_values": {
+          "Paracetamol": 1330,
+          "Amlodipine": 1026,
+          "Metformin": 812,
+          "Amoxicillin": 693,
+          "Pantoprazole": 656,
+          "Cetirizine": 634
+        },
+        "value_counts": {
+          "Paracetamol": 1330,
+          "Amlodipine": 1026,
+          "Metformin": 812,
+          "Amoxicillin": 693,
+          "Pantoprazole": 656,
+          "Cetirizine": 634
+        }
+      },
+      "medicine_class": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 6,
+        "top_values": {
+          "Analgesic": 1330,
+          "Antihypertensive": 1026,
+          "Antidiabetic": 812,
+          "Antibiotic": 693,
+          "Antacid": 656,
+          "Antihistamine": 634
+        },
+        "value_counts": {
+          "Analgesic": 1330,
+          "Antihypertensive": 1026,
+          "Antidiabetic": 812,
+          "Antibiotic": 693,
+          "Antacid": 656,
+          "Antihistamine": 634
+        }
+      },
+      "frequency": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "TID": 1763,
+          "BD": 1736,
+          "OD": 1652
+        },
+        "value_counts": {
+          "TID": 1763,
+          "BD": 1736,
+          "OD": 1652
+        }
+      },
+      "days_prescribed": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4,
+        "top_values": {
+          "5": 1991,
+          "30": 1838,
+          "3": 666,
+          "10": 656
+        },
+        "value_counts": {
+          "5": 1991,
+          "30": 1838,
+          "3": 666,
+          "10": 656
+        }
+      },
+      "route": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "Topical": 2602,
+          "Oral": 2549
+        },
+        "value_counts": {
+          "Topical": 2602,
+          "Oral": 2549
+        }
+      },
+      "facility_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 27,
+        "top_values": {
+          "FAC023": 227,
+          "FAC024": 213,
+          "FAC010": 211,
+          "FAC015": 207,
+          "FAC022": 207,
+          "FAC017": 206,
+          "FAC021": 202,
+          "FAC025": 198
+        }
+      }
+    }
+  },
+  "medicine_dispensing.csv": {
+    "rows": 3756,
+    "cols": 14,
+    "columns": [
+      "dispense_id",
+      "pharm_source_patient_id",
+      "patient_name",
+      "mobile",
+      "village",
+      "dispense_date",
+      "prescription_id",
+      "medicine_name",
+      "prescribed_qty_proxy",
+      "dispensed_qty",
+      "partial_fill",
+      "stockout_flag",
+      "facility_id",
+      "dispense_status"
+    ],
+    "duplicate_full_rows": 0,
+    "column_profile": {
+      "dispense_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3756,
+        "top_values": {
+          "DSP0000001": 1,
+          "DSP0000002": 1,
+          "DSP0000003": 1,
+          "DSP0000004": 1,
+          "DSP0000005": 1,
+          "DSP0000006": 1,
+          "DSP0000007": 1,
+          "DSP0000008": 1
+        }
+      },
+      "pharm_source_patient_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2781,
+        "top_values": {
+          "PHP0000094": 6,
+          "PHP0000725": 5,
+          "PHP0001863": 5,
+          "PHP0000006": 4,
+          "PHP0000069": 4,
+          "PHP0000236": 4,
+          "PHP0000253": 4,
+          "PHP0000262": 4
+        }
+      },
+      "patient_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 1113,
+        "top_values": {
+          "Jyothi Krishna": 15,
+          "Bhavani Mudiraj": 14,
+          "Anitha Mallaiah": 14,
+          "Mohan Jangam": 13,
+          "Renuka Narsimha": 13,
+          "Arun Begum": 13,
+          "Ramesh Reddy": 12,
+          "Kiran Rao": 11
+        }
+      },
+      "mobile": {
+        "dtype": "str",
+        "null_count": 301,
+        "null_pct": 8.01,
+        "n_unique": 2855,
+        "top_values": {
+          "9962592192": 6,
+          "9966229154": 5,
+          "9442198767": 4,
+          "9180846400": 4,
+          "9656275094": 4,
+          "9923204686": 4,
+          "9750516410": 4,
+          "9763556361": 4
+        }
+      },
+      "village": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 112,
+        "top_values": {
+          "Jharasangam": 122,
+          "Kummarikunta": 120,
+          "Velpula": 117,
+          "Kohir": 109,
+          "Rajapur": 105,
+          "Kondamallepally": 102,
+          "Kangti": 101,
+          "Mogudampally": 101
+        }
+      },
+      "dispense_date": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 232,
+        "top_values": {
+          "2026-07-27": 34,
+          "2026-06-24": 32,
+          "2026-05-25": 30,
+          "2026-07-18": 30,
+          "2026-07-21": 28,
+          "2026-08-06": 26,
+          "2026-07-16": 26,
+          "2026-05-28": 26
+        },
+        "date_range": {
+          "parseable_pct": 100.0,
+          "min_date": "2026-01-01 00:00:00",
+          "max_date": "2026-08-20 00:00:00"
+        }
+      },
+      "prescription_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3231,
+        "top_values": {
+          "RX0001071": 3,
+          "RX0001079": 3,
+          "RX0001307": 3,
+          "RX0001521": 3,
+          "RX0002134": 3,
+          "RX0002182": 3,
+          "RX0002329": 3,
+          "RX0002652": 3
+        }
+      },
+      "medicine_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 6,
+        "top_values": {
+          "Paracetamol": 964,
+          "Amlodipine": 750,
+          "Metformin": 586,
+          "Amoxicillin": 496,
+          "Pantoprazole": 486,
+          "Cetirizine": 474
+        },
+        "value_counts": {
+          "Paracetamol": 964,
+          "Amlodipine": 750,
+          "Metformin": 586,
+          "Amoxicillin": 496,
+          "Pantoprazole": 486,
+          "Cetirizine": 474
+        }
+      },
+      "prescribed_qty_proxy": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4,
+        "top_values": {
+          "5": 1454,
+          "30": 1336,
+          "10": 486,
+          "3": 480
+        },
+        "value_counts": {
+          "5": 1454,
+          "30": 1336,
+          "10": 486,
+          "3": 480
+        }
+      },
+      "dispensed_qty": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "15": 1837,
+          "30": 1821,
+          "0": 98
+        },
+        "value_counts": {
+          "15": 1837,
+          "30": 1821,
+          "0": 98
+        }
+      },
+      "partial_fill": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "0": 3105,
+          "1": 651
+        },
+        "value_counts": {
+          "0": 3105,
+          "1": 651
+        }
+      },
+      "stockout_flag": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "0": 3613,
+          "1": 143
+        },
+        "value_counts": {
+          "0": 3613,
+          "1": 143
+        }
+      },
+      "facility_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 27,
+        "top_values": {
+          "FAC024": 169,
+          "FAC010": 162,
+          "FAC003": 159,
+          "FAC023": 159,
+          "FAC022": 157,
+          "FAC008": 154,
+          "FAC014": 149,
+          "FAC009": 147
+        }
+      },
+      "dispense_status": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "Dispensed": 3007,
+          "Partially dispensed": 651,
+          "Not dispensed due to stock": 98
+        },
+        "value_counts": {
+          "Dispensed": 3007,
+          "Partially dispensed": 651,
+          "Not dispensed due to stock": 98
+        }
+      }
+    }
+  },
+  "medicine_stock_status.csv": {
+    "rows": 1296,
+    "cols": 11,
+    "columns": [
+      "stock_record_id",
+      "facility_id",
+      "snapshot_month",
+      "medicine_name",
+      "opening_stock",
+      "received_qty",
+      "dispensed_qty_month",
+      "closing_stock",
+      "stockout_flag_month",
+      "stockout_days",
+      "stock_status"
+    ],
+    "duplicate_full_rows": 0,
+    "column_profile": {
+      "stock_record_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 1296,
+        "top_values": {
+          "STK0000001": 1,
+          "STK0000002": 1,
+          "STK0000003": 1,
+          "STK0000004": 1,
+          "STK0000005": 1,
+          "STK0000006": 1,
+          "STK0000007": 1,
+          "STK0000008": 1
+        }
+      },
+      "facility_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 27,
+        "top_values": {
+          "FAC001": 48,
+          "FAC002": 48,
+          "FAC003": 48,
+          "FAC004": 48,
+          "FAC005": 48,
+          "FAC006": 48,
+          "FAC007": 48,
+          "FAC008": 48
+        }
+      },
+      "snapshot_month": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 8,
+        "top_values": {
+          "2026-01-01": 162,
+          "2026-02-01": 162,
+          "2026-03-01": 162,
+          "2026-04-01": 162,
+          "2026-05-01": 162,
+          "2026-06-01": 162,
+          "2026-07-01": 162,
+          "2026-08-01": 162
+        },
+        "value_counts": {
+          "2026-01-01": 162,
+          "2026-02-01": 162,
+          "2026-03-01": 162,
+          "2026-04-01": 162,
+          "2026-05-01": 162,
+          "2026-06-01": 162,
+          "2026-07-01": 162,
+          "2026-08-01": 162
+        },
+        "date_range": {
+          "parseable_pct": 100.0,
+          "min_date": "2026-01-01 00:00:00",
+          "max_date": "2026-08-01 00:00:00"
+        }
+      },
+      "medicine_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 6,
+        "top_values": {
+          "Amlodipine": 216,
+          "Metformin": 216,
+          "Paracetamol": 216,
+          "Cetirizine": 216,
+          "Pantoprazole": 216,
+          "Amoxicillin": 216
+        },
+        "value_counts": {
+          "Amlodipine": 216,
+          "Metformin": 216,
+          "Paracetamol": 216,
+          "Cetirizine": 216,
+          "Pantoprazole": 216,
+          "Amoxicillin": 216
+        }
+      },
+      "opening_stock": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 221,
+        "top_values": {
+          "236": 14,
+          "204": 14,
+          "263": 12,
+          "161": 11,
+          "285": 11,
+          "99": 11,
+          "121": 11,
+          "250": 11
+        }
+      },
+      "received_qty": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 180,
+        "top_values": {
+          "66": 15,
+          "95": 14,
+          "159": 14,
+          "77": 12,
+          "146": 12,
+          "123": 12,
+          "67": 11,
+          "160": 11
+        }
+      },
+      "dispensed_qty_month": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 373,
+        "top_values": {
+          "0": 33,
+          "153": 12,
+          "184": 9,
+          "141": 9,
+          "235": 9,
+          "142": 9,
+          "170": 9,
+          "197": 9
+        }
+      },
+      "closing_stock": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 207,
+        "top_values": {
+          "0": 58,
+          "25": 13,
+          "149": 12,
+          "211": 12,
+          "100": 12,
+          "95": 11,
+          "126": 11,
+          "200": 11
+        }
+      },
+      "stockout_flag_month": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "0": 1238,
+          "1": 58
+        },
+        "value_counts": {
+          "0": 1238,
+          "1": 58
+        }
+      },
+      "stockout_days": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 11,
+        "top_values": {
+          "0": 1238,
+          "3": 10,
+          "6": 9,
+          "11": 8,
+          "12": 7,
+          "4": 6,
+          "5": 5,
+          "7": 4
+        },
+        "value_counts": {
+          "0": 1238,
+          "3": 10,
+          "6": 9,
+          "11": 8,
+          "12": 7,
+          "4": 6,
+          "5": 5,
+          "7": 4,
+          "8": 4,
+          "10": 4,
+          "9": 1
+        }
+      },
+      "stock_status": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "Adequate": 1148,
+          "Low stock": 90,
+          "Reorder raised": 58
+        },
+        "value_counts": {
+          "Adequate": 1148,
+          "Low stock": 90,
+          "Reorder raised": 58
+        }
+      }
+    }
+  },
+  "lab_tests.csv": {
+    "rows": 2005,
+    "cols": 13,
+    "columns": [
+      "lab_record_id",
+      "lab_source_patient_id",
+      "patient_name",
+      "mobile",
+      "village",
+      "order_date",
+      "test_name",
+      "sample_date",
+      "result_date",
+      "result_flag",
+      "test_status",
+      "facility_id",
+      "lab_type"
+    ],
+    "duplicate_full_rows": 0,
+    "column_profile": {
+      "lab_record_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2005,
+        "top_values": {
+          "LAB0000001": 1,
+          "LAB0000002": 1,
+          "LAB0000003": 1,
+          "LAB0000004": 1,
+          "LAB0000005": 1,
+          "LAB0000006": 1,
+          "LAB0000007": 1,
+          "LAB0000008": 1
+        }
+      },
+      "lab_source_patient_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 1814,
+        "top_values": {
+          "LAP0000161": 3,
+          "LAP0000260": 3,
+          "LAP0000375": 3,
+          "LAP0000376": 3,
+          "LAP0000671": 3,
+          "LAP0000803": 3,
+          "LAP0000930": 3,
+          "LAP0000933": 3
+        }
+      },
+      "patient_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 914,
+        "top_values": {
+          "Anitha Naik": 9,
+          "Anil Reddy": 8,
+          "Divya Yadav": 8,
+          "Shobha Shekar": 7,
+          "Lakshmi Mallaiah": 7,
+          "Swathi Rao": 7,
+          "Praveen Laxman": 7,
+          "Harika Mudiraj": 7
+        }
+      },
+      "mobile": {
+        "dtype": "str",
+        "null_count": 148,
+        "null_pct": 7.38,
+        "n_unique": 1738,
+        "top_values": {
+          "9771818114": 3,
+          "9252033626": 3,
+          "9295746185": 3,
+          "9923204686": 3,
+          "9154814883": 3,
+          "9158829295": 3,
+          "9528864219": 3,
+          "9412818675": 2
+        }
+      },
+      "village": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 111,
+        "top_values": {
+          "Midjil": 71,
+          "Jharasangam": 63,
+          "Velpula": 60,
+          "Kohir": 59,
+          "Devarakonda": 58,
+          "Kondamallepally": 55,
+          "Bodajanampet": 54,
+          "Donur": 53
+        }
+      },
+      "order_date": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 227,
+        "top_values": {
+          "2026-07-15": 23,
+          "2026-08-15": 17,
+          "2026-05-23": 17,
+          "2026-08-10": 17,
+          "2026-05-19": 16,
+          "2026-08-13": 16,
+          "2026-06-14": 16,
+          "2026-07-30": 16
+        },
+        "date_range": {
+          "parseable_pct": 100.0,
+          "min_date": "2026-01-01 00:00:00",
+          "max_date": "2026-08-15 00:00:00"
+        }
+      },
+      "test_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 9,
+        "top_values": {
+          "CBC": 243,
+          "Creatinine": 232,
+          "HbA1c": 226,
+          "ECG": 222,
+          "Lipid Profile": 217,
+          "Blood Glucose": 217,
+          "BP Recheck": 216,
+          "Urine Routine": 216
+        },
+        "value_counts": {
+          "CBC": 243,
+          "Creatinine": 232,
+          "HbA1c": 226,
+          "ECG": 222,
+          "Lipid Profile": 217,
+          "Blood Glucose": 217,
+          "BP Recheck": 216,
+          "Urine Routine": 216,
+          "Chest X-ray": 216
+        }
+      },
+      "sample_date": {
+        "dtype": "str",
+        "null_count": 513,
+        "null_pct": 25.59,
+        "n_unique": 232,
+        "top_values": {
+          "2026-08-01": 15,
+          "2026-08-10": 14,
+          "2026-08-09": 13,
+          "2026-06-30": 13,
+          "2026-06-06": 12,
+          "2026-08-16": 12,
+          "2026-07-22": 12,
+          "2026-06-10": 12
+        },
+        "date_range": {
+          "parseable_pct": 74.41,
+          "min_date": "2026-01-02 00:00:00",
+          "max_date": "2026-08-22 00:00:00"
+        }
+      },
+      "result_date": {
+        "dtype": "str",
+        "null_count": 513,
+        "null_pct": 25.59,
+        "n_unique": 233,
+        "top_values": {
+          "2026-06-30": 16,
+          "2026-07-27": 15,
+          "2026-06-11": 14,
+          "2026-07-29": 14,
+          "2026-07-23": 13,
+          "2026-07-18": 13,
+          "2026-05-10": 13,
+          "2026-08-10": 13
+        },
+        "date_range": {
+          "parseable_pct": 74.41,
+          "min_date": "2026-01-03 00:00:00",
+          "max_date": "2026-08-24 00:00:00"
+        }
+      },
+      "result_flag": {
+        "dtype": "str",
+        "null_count": 513,
+        "null_pct": 25.59,
+        "n_unique": 3,
+        "top_values": {
+          "Normal": 1142,
+          "Abnormal": 181,
+          "Critical": 169
+        },
+        "value_counts": {
+          "Normal": 1142,
+          "Abnormal": 181,
+          "Critical": 169
+        }
+      },
+      "test_status": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "Available": 1492,
+          "Ordered-not-completed": 513
+        },
+        "value_counts": {
+          "Available": 1492,
+          "Ordered-not-completed": 513
+        }
+      },
+      "facility_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 27,
+        "top_values": {
+          "FAC023": 94,
+          "FAC007": 94,
+          "FAC012": 85,
+          "FAC025": 85,
+          "FAC009": 82,
+          "FAC003": 81,
+          "FAC015": 79,
+          "FAC005": 79
+        }
+      },
+      "lab_type": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "External lab": 686,
+          "Hub lab": 671,
+          "Facility lab": 648
+        },
+        "value_counts": {
+          "External lab": 686,
+          "Hub lab": 671,
+          "Facility lab": 648
+        }
+      }
+    }
+  },
+  "followup_visits.csv": {
+    "rows": 2575,
+    "cols": 11,
+    "columns": [
+      "visit_id",
+      "visit_source_patient_id",
+      "patient_name",
+      "mobile",
+      "village",
+      "visit_date",
+      "visit_type",
+      "facility_id",
+      "episode_id",
+      "clinical_status",
+      "referral_flag"
+    ],
+    "duplicate_full_rows": 0,
+    "column_profile": {
+      "visit_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2575,
+        "top_values": {
+          "VIS0000003": 1,
+          "VIS0000005": 1,
+          "VIS0000009": 1,
+          "VIS0000011": 1,
+          "VIS0000013": 1,
+          "VIS0000017": 1,
+          "VIS0000019": 1,
+          "VIS0000021": 1
+        }
+      },
+      "visit_source_patient_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2270,
+        "top_values": {
+          "VIP0000008": 3,
+          "VIP0000278": 3,
+          "VIP0000379": 3,
+          "VIP0001100": 3,
+          "VIP0001936": 3,
+          "VIP0002140": 3,
+          "VIP0002214": 3,
+          "VIP0002647": 3
+        }
+      },
+      "patient_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 981,
+        "top_values": {
+          "Harika Mudiraj": 10,
+          "Nirmala Khan": 9,
+          "Arun Khan": 9,
+          "Rani Reddy": 9,
+          "Lalitha Krishna": 9,
+          "Bhavani Mudiraj": 8,
+          "Sushma Begum": 8,
+          "Mohan Jangam": 8
+        }
+      },
+      "mobile": {
+        "dtype": "str",
+        "null_count": 183,
+        "null_pct": 7.11,
+        "n_unique": 2208,
+        "top_values": {
+          "9923204686": 3,
+          "9494639191": 3,
+          "9750516410": 3,
+          "9761939946": 3,
+          "9106488043": 3,
+          "9308761512": 2,
+          "9412818675": 2,
+          "9930258785": 2
+        }
+      },
+      "village": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 110,
+        "top_values": {
+          "Midjil": 91,
+          "Kohir": 85,
+          "Jharasangam": 82,
+          "Balanagar": 78,
+          "Velpula": 75,
+          "Devarakonda": 72,
+          "Kummarikunta": 71,
+          "Bhanur": 71
+        }
+      },
+      "visit_date": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 255,
+        "top_values": {
+          "2026-07-07": 23,
+          "2026-07-25": 21,
+          "2026-07-03": 21,
+          "2026-08-14": 21,
+          "2026-07-09": 20,
+          "2026-08-20": 19,
+          "2026-08-11": 19,
+          "2026-06-29": 19
+        },
+        "date_range": {
+          "parseable_pct": 100.0,
+          "min_date": "2026-01-08 00:00:00",
+          "max_date": "2026-09-21 00:00:00"
+        }
+      },
+      "visit_type": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 1,
+        "top_values": {
+          "Follow-up review": 2575
+        },
+        "value_counts": {
+          "Follow-up review": 2575
+        }
+      },
+      "facility_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 27,
+        "top_values": {
+          "FAC007": 117,
+          "FAC025": 112,
+          "FAC022": 111,
+          "FAC008": 111,
+          "FAC024": 111,
+          "FAC006": 110,
+          "FAC009": 110,
+          "FAC003": 105
+        }
+      },
+      "episode_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2575,
+        "top_values": {
+          "E0000003": 1,
+          "E0000004": 1,
+          "E0000007": 1,
+          "E0000008": 1,
+          "E0000009": 1,
+          "E0000012": 1,
+          "E0000013": 1,
+          "E0000014": 1
+        }
+      },
+      "clinical_status": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "Improved": 931,
+          "Needs escalation": 860,
+          "Stable": 784
+        },
+        "value_counts": {
+          "Improved": 931,
+          "Needs escalation": 860,
+          "Stable": 784
+        }
+      },
+      "referral_flag": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "No": 1707,
+          "Yes": 868
+        },
+        "value_counts": {
+          "No": 1707,
+          "Yes": 868
+        }
+      }
+    }
+  },
+  "visit_history.csv": {
+    "rows": 13061,
+    "cols": 11,
+    "columns": [
+      "visit_id",
+      "visit_source_patient_id",
+      "patient_name",
+      "mobile",
+      "village",
+      "visit_date",
+      "visit_type",
+      "facility_id",
+      "episode_id",
+      "clinical_status",
+      "referral_flag"
+    ],
+    "duplicate_full_rows": 0,
+    "column_profile": {
+      "visit_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 13061,
+        "top_values": {
+          "VIS0000001": 1,
+          "VIS0000002": 1,
+          "VIS0000003": 1,
+          "VIS0000004": 1,
+          "VIS0000005": 1,
+          "VIS0000006": 1,
+          "VIS0000007": 1,
+          "VIS0000008": 1
+        }
+      },
+      "visit_source_patient_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4747,
+        "top_values": {
+          "VIP0000379": 8,
+          "VIP0002214": 8,
+          "VIP0002647": 8,
+          "VIP0002762": 8,
+          "VIP0000142": 7,
+          "VIP0000168": 7,
+          "VIP0000339": 7,
+          "VIP0000377": 7
+        }
+      },
+      "patient_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 1730,
+        "top_values": {
+          "Praveen Laxman": 35,
+          "Harika Mudiraj": 35,
+          "Mounika Yadav": 34,
+          "Rani Reddy": 34,
+          "Kiran Rao": 33,
+          "Santosh Rao": 33,
+          "Raghav Basha": 33,
+          "Bhavani Das": 33
+        }
+      },
+      "mobile": {
+        "dtype": "str",
+        "null_count": 1068,
+        "null_pct": 8.18,
+        "n_unique": 6411,
+        "top_values": {
+          "9815927753": 7,
+          "9771818114": 7,
+          "9854579507": 7,
+          "9295746185": 7,
+          "9967548434": 7,
+          "9750516410": 7,
+          "9761939946": 7,
+          "9768879911": 7
+        }
+      },
+      "village": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 113,
+        "top_values": {
+          "Midjil": 379,
+          "Nomula": 368,
+          "Kohir": 364,
+          "Jharasangam": 363,
+          "Kummarikunta": 360,
+          "Kangti": 350,
+          "Velpula": 350,
+          "Devarakonda": 347
+        }
+      },
+      "visit_date": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 448,
+        "top_values": {
+          "2026-04-17": 67,
+          "2026-06-10": 67,
+          "2026-06-01": 66,
+          "2026-06-15": 65,
+          "2026-05-30": 64,
+          "2026-06-29": 64,
+          "2026-04-19": 62,
+          "2026-05-19": 61
+        },
+        "date_range": {
+          "parseable_pct": 100.0,
+          "min_date": "2025-07-01 00:00:00",
+          "max_date": "2026-09-21 00:00:00"
+        }
+      },
+      "visit_type": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 5,
+        "top_values": {
+          "Teleconsultation": 5516,
+          "Follow-up review": 2575,
+          "NCD follow-up": 1699,
+          "Screening visit": 1639,
+          "OPD visit": 1632
+        },
+        "value_counts": {
+          "Teleconsultation": 5516,
+          "Follow-up review": 2575,
+          "NCD follow-up": 1699,
+          "Screening visit": 1639,
+          "OPD visit": 1632
+        }
+      },
+      "facility_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 27,
+        "top_values": {
+          "FAC022": 534,
+          "FAC023": 528,
+          "FAC024": 528,
+          "FAC007": 527,
+          "FAC021": 518,
+          "FAC008": 517,
+          "FAC009": 514,
+          "FAC025": 502
+        }
+      },
+      "episode_id": {
+        "dtype": "str",
+        "null_count": 4970,
+        "null_pct": 38.05,
+        "n_unique": 5516,
+        "top_values": {
+          "E0000003": 2,
+          "E0000004": 2,
+          "E0000007": 2,
+          "E0000008": 2,
+          "E0000009": 2,
+          "E0000012": 2,
+          "E0000013": 2,
+          "E0000014": 2
+        }
+      },
+      "clinical_status": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 5,
+        "top_values": {
+          "Consult completed": 5516,
+          "Improved": 2522,
+          "Stable": 2451,
+          "New complaint": 1712,
+          "Needs escalation": 860
+        },
+        "value_counts": {
+          "Consult completed": 5516,
+          "Improved": 2522,
+          "Stable": 2451,
+          "New complaint": 1712,
+          "Needs escalation": 860
+        }
+      },
+      "referral_flag": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "No": 12193,
+          "Yes": 868
+        },
+        "value_counts": {
+          "No": 12193,
+          "Yes": 868
+        }
+      }
+    }
+  },
+  "outreach_actions.csv": {
+    "rows": 6088,
+    "cols": 12,
+    "columns": [
+      "outreach_id",
+      "outreach_source_patient_id",
+      "patient_name",
+      "mobile",
+      "village",
+      "action_date",
+      "action_method",
+      "contact_outcome",
+      "cadre",
+      "facility_id",
+      "episode_id",
+      "followup_reason"
+    ],
+    "duplicate_full_rows": 0,
+    "column_profile": {
+      "outreach_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 6088,
+        "top_values": {
+          "OUT0000001": 1,
+          "OUT0000002": 1,
+          "OUT0000003": 1,
+          "OUT0000004": 1,
+          "OUT0000005": 1,
+          "OUT0000006": 1,
+          "OUT0000007": 1,
+          "OUT0000008": 1
+        }
+      },
+      "outreach_source_patient_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2705,
+        "top_values": {
+          "OUP0001538": 9,
+          "OUP0000770": 8,
+          "OUP0002216": 8,
+          "OUP0000156": 7,
+          "OUP0000225": 7,
+          "OUP0000885": 7,
+          "OUP0001137": 7,
+          "OUP0002002": 7
+        }
+      },
+      "patient_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 1324,
+        "top_values": {
+          "Shobha Shekar": 25,
+          "Raghav Basha": 24,
+          "Bhavani Das": 23,
+          "Praveen Laxman": 21,
+          "Arun Begum": 21,
+          "Rani Reddy": 19,
+          "Naveen Khan": 19,
+          "Deepika Mudiraj": 19
+        }
+      },
+      "mobile": {
+        "dtype": "str",
+        "null_count": 470,
+        "null_pct": 7.72,
+        "n_unique": 3358,
+        "top_values": {
+          "9158829295": 8,
+          "9839160591": 7,
+          "9684831035": 6,
+          "9815927753": 6,
+          "9501336585": 6,
+          "9369879329": 6,
+          "9207604901": 6,
+          "9724684314": 6
+        }
+      },
+      "village": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 113,
+        "top_values": {
+          "Zaheerabad": 200,
+          "Bodajanampet": 194,
+          "Kalher": 190,
+          "Nakrekal": 186,
+          "Jharasangam": 179,
+          "Kummarikunta": 178,
+          "Devarakonda": 176,
+          "Gundlapally": 170
+        }
+      },
+      "action_date": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 250,
+        "top_values": {
+          "2026-08-21": 44,
+          "2026-08-04": 44,
+          "2026-06-29": 42,
+          "2026-07-23": 41,
+          "2026-07-28": 41,
+          "2026-08-22": 41,
+          "2026-06-25": 39,
+          "2026-07-07": 39
+        },
+        "date_range": {
+          "parseable_pct": 100.0,
+          "min_date": "2026-01-04 00:00:00",
+          "max_date": "2026-09-15 00:00:00"
+        }
+      },
+      "action_method": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4,
+        "top_values": {
+          "Phone call": 2639,
+          "Home visit": 1821,
+          "Village health day reminder": 869,
+          "WhatsApp/SMS": 759
+        },
+        "value_counts": {
+          "Phone call": 2639,
+          "Home visit": 1821,
+          "Village health day reminder": 869,
+          "WhatsApp/SMS": 759
+        }
+      },
+      "contact_outcome": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 7,
+        "top_values": {
+          "Reached; promised follow-up": 1395,
+          "Reached; counselled": 1348,
+          "Family member reached": 1262,
+          "Phone switched off": 541,
+          "Patient unavailable": 538,
+          "Wrong number": 521,
+          "No answer": 483
+        },
+        "value_counts": {
+          "Reached; promised follow-up": 1395,
+          "Reached; counselled": 1348,
+          "Family member reached": 1262,
+          "Phone switched off": 541,
+          "Patient unavailable": 538,
+          "Wrong number": 521,
+          "No answer": 483
+        }
+      },
+      "cadre": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "CHO": 3059,
+          "ASHA": 3029
+        },
+        "value_counts": {
+          "CHO": 3059,
+          "ASHA": 3029
+        }
+      },
+      "facility_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 27,
+        "top_values": {
+          "FAC023": 286,
+          "FAC017": 265,
+          "FAC015": 255,
+          "FAC022": 255,
+          "FAC016": 254,
+          "FAC025": 251,
+          "FAC011": 241,
+          "FAC012": 241
+        }
+      },
+      "episode_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3152,
+        "top_values": {
+          "E0000007": 3,
+          "E0000010": 3,
+          "E0000031": 3,
+          "E0000043": 3,
+          "E0000068": 3,
+          "E0000070": 3,
+          "E0000079": 3,
+          "E0000080": 3
+        }
+      },
+      "followup_reason": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4,
+        "top_values": {
+          "Medicine pickup": 1604,
+          "Review visit": 1558,
+          "General adherence": 1488,
+          "Test completion": 1438
+        },
+        "value_counts": {
+          "Medicine pickup": 1604,
+          "Review visit": 1558,
+          "General adherence": 1488,
+          "Test completion": 1438
+        }
+      }
+    }
+  },
+  "facility_reference.csv": {
+    "rows": 27,
+    "cols": 10,
+    "columns": [
+      "facility_id",
+      "facility_name",
+      "facility_type",
+      "district",
+      "block",
+      "latitude",
+      "longitude",
+      "network_context",
+      "cho_count",
+      "asha_linked_count"
+    ],
+    "duplicate_full_rows": 0,
+    "column_profile": {
+      "facility_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 27,
+        "top_values": {
+          "FAC001": 1,
+          "FAC002": 1,
+          "FAC003": 1,
+          "FAC004": 1,
+          "FAC005": 1,
+          "FAC006": 1,
+          "FAC007": 1,
+          "FAC008": 1
+        }
+      },
+      "facility_name": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 27,
+        "top_values": {
+          "Jadcherla PHC-1": 1,
+          "Jadcherla HWC-1": 1,
+          "Jadcherla HWC-2": 1,
+          "Balanagar PHC-1": 1,
+          "Balanagar HWC-1": 1,
+          "Balanagar HWC-2": 1,
+          "Midjil PHC-1": 1,
+          "Midjil HWC-1": 1
+        }
+      },
+      "facility_type": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "HWC": 18,
+          "PHC": 9
+        },
+        "value_counts": {
+          "HWC": 18,
+          "PHC": 9
+        }
+      },
+      "district": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "Mahabubnagar": 9,
+          "Nalgonda": 9,
+          "Sangareddy": 9
+        },
+        "value_counts": {
+          "Mahabubnagar": 9,
+          "Nalgonda": 9,
+          "Sangareddy": 9
+        }
+      },
+      "block": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 9,
+        "top_values": {
+          "Jadcherla": 3,
+          "Balanagar": 3,
+          "Midjil": 3,
+          "Devarakonda": 3,
+          "Chandur": 3,
+          "Nakrekal": 3,
+          "Narayankhed": 3,
+          "Zaheerabad": 3
+        },
+        "value_counts": {
+          "Jadcherla": 3,
+          "Balanagar": 3,
+          "Midjil": 3,
+          "Devarakonda": 3,
+          "Chandur": 3,
+          "Nakrekal": 3,
+          "Narayankhed": 3,
+          "Zaheerabad": 3,
+          "Patancheru": 3
+        }
+      },
+      "latitude": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 27,
+        "top_values": {
+          "16.777331": 1,
+          "16.757882": 1,
+          "16.822409": 1,
+          "16.690049": 1,
+          "16.70255": 1,
+          "16.761234": 1,
+          "16.768512": 1,
+          "16.757063": 1
+        }
+      },
+      "longitude": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 27,
+        "top_values": {
+          "78.039561": 1,
+          "77.831472": 1,
+          "78.00411": 1,
+          "77.900362": 1,
+          "77.907372": 1,
+          "77.842243": 1,
+          "78.006275": 1,
+          "77.846603": 1
+        }
+      },
+      "network_context": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4,
+        "top_values": {
+          "4G reliable": 10,
+          "4G intermittent": 8,
+          "2G/3G": 6,
+          "Offline-prone": 3
+        },
+        "value_counts": {
+          "4G reliable": 10,
+          "4G intermittent": 8,
+          "2G/3G": 6,
+          "Offline-prone": 3
+        }
+      },
+      "cho_count": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "2": 12,
+          "3": 9,
+          "1": 6
+        },
+        "value_counts": {
+          "2": 12,
+          "3": 9,
+          "1": 6
+        }
+      },
+      "asha_linked_count": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 5,
+        "top_values": {
+          "2": 11,
+          "3": 6,
+          "4": 5,
+          "6": 3,
+          "5": 2
+        },
+        "value_counts": {
+          "2": 11,
+          "3": 6,
+          "4": 5,
+          "6": 3,
+          "5": 2
+        }
+      }
+    }
+  },
+  "geography_reference.csv": {
+    "rows": 36,
+    "cols": 9,
+    "columns": [
+      "village_id",
+      "village",
+      "district",
+      "block",
+      "latitude",
+      "longitude",
+      "population",
+      "road_access",
+      "mobile_connectivity"
+    ],
+    "duplicate_full_rows": 0,
+    "column_profile": {
+      "village_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 36,
+        "top_values": {
+          "VIL0001": 1,
+          "VIL0002": 1,
+          "VIL0003": 1,
+          "VIL0004": 1,
+          "VIL0005": 1,
+          "VIL0006": 1,
+          "VIL0007": 1,
+          "VIL0008": 1
+        }
+      },
+      "village": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 36,
+        "top_values": {
+          "Badepally": 1,
+          "Polepally": 1,
+          "Gangapur": 1,
+          "Macharam": 1,
+          "Balanagar": 1,
+          "Rajapur": 1,
+          "Kallepally": 1,
+          "Bodajanampet": 1
+        }
+      },
+      "district": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 3,
+        "top_values": {
+          "Mahabubnagar": 12,
+          "Nalgonda": 12,
+          "Sangareddy": 12
+        },
+        "value_counts": {
+          "Mahabubnagar": 12,
+          "Nalgonda": 12,
+          "Sangareddy": 12
+        }
+      },
+      "block": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 9,
+        "top_values": {
+          "Jadcherla": 4,
+          "Balanagar": 4,
+          "Midjil": 4,
+          "Devarakonda": 4,
+          "Chandur": 4,
+          "Nakrekal": 4,
+          "Narayankhed": 4,
+          "Zaheerabad": 4
+        },
+        "value_counts": {
+          "Jadcherla": 4,
+          "Balanagar": 4,
+          "Midjil": 4,
+          "Devarakonda": 4,
+          "Chandur": 4,
+          "Nakrekal": 4,
+          "Narayankhed": 4,
+          "Zaheerabad": 4,
+          "Patancheru": 4
+        }
+      },
+      "latitude": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 36,
+        "top_values": {
+          "16.863881": 1,
+          "16.82928": 1,
+          "16.65645": 1,
+          "16.932619": 1,
+          "16.759837": 1,
+          "16.815673": 1,
+          "16.603766": 1,
+          "16.740128": 1
+        }
+      },
+      "longitude": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 36,
+        "top_values": {
+          "77.982442": 1,
+          "77.80676": 1,
+          "78.181741": 1,
+          "78.039468": 1,
+          "77.829396": 1,
+          "77.901707": 1,
+          "78.131485": 1,
+          "78.154652": 1
+        }
+      },
+      "population": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 36,
+        "top_values": {
+          "3961": 1,
+          "1910": 1,
+          "4949": 1,
+          "5902": 1,
+          "1974": 1,
+          "1549": 1,
+          "1921": 1,
+          "1731": 1
+        }
+      },
+      "road_access": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4,
+        "top_values": {
+          "Paved": 14,
+          "Mixed": 12,
+          "Mostly paved": 9,
+          "Poor": 1
+        },
+        "value_counts": {
+          "Paved": 14,
+          "Mixed": 12,
+          "Mostly paved": 9,
+          "Poor": 1
+        }
+      },
+      "mobile_connectivity": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 4,
+        "top_values": {
+          "Moderate": 19,
+          "Weak": 7,
+          "Good": 7,
+          "Very weak": 3
+        },
+        "value_counts": {
+          "Moderate": 19,
+          "Weak": 7,
+          "Good": 7,
+          "Very weak": 3
+        }
+      }
+    }
+  },
+  "episode_outcomes.csv": {
+    "rows": 5516,
+    "cols": 6,
+    "columns": [
+      "episode_id",
+      "teleconsult_id",
+      "consult_date",
+      "cohort",
+      "lost_to_followup_label",
+      "dropout_stage_label"
+    ],
+    "duplicate_full_rows": 0,
+    "column_profile": {
+      "episode_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 5516,
+        "top_values": {
+          "E0000001": 1,
+          "E0000002": 1,
+          "E0000003": 1,
+          "E0000004": 1,
+          "E0000005": 1,
+          "E0000006": 1,
+          "E0000007": 1,
+          "E0000008": 1
+        }
+      },
+      "teleconsult_id": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 5516,
+        "top_values": {
+          "TC0000001": 1,
+          "TC0000002": 1,
+          "TC0000003": 1,
+          "TC0000004": 1,
+          "TC0000005": 1,
+          "TC0000006": 1,
+          "TC0000007": 1,
+          "TC0000008": 1
+        }
+      },
+      "consult_date": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 227,
+        "top_values": {
+          "2026-07-30": 43,
+          "2026-07-15": 43,
+          "2026-08-11": 41,
+          "2026-08-13": 39,
+          "2026-08-15": 39,
+          "2026-07-03": 37,
+          "2026-07-21": 37,
+          "2026-08-02": 37
+        },
+        "date_range": {
+          "parseable_pct": 100.0,
+          "min_date": "2026-01-01 00:00:00",
+          "max_date": "2026-08-15 00:00:00"
+        }
+      },
+      "cohort": {
+        "dtype": "str",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "n_unique": 2,
+        "top_values": {
+          "DEVELOPMENT": 4132,
+          "EVALUATION": 1384
+        },
+        "value_counts": {
+          "DEVELOPMENT": 4132,
+          "EVALUATION": 1384
+        }
+      },
+      "lost_to_followup_label": {
+        "dtype": "str",
+        "null_count": 1384,
+        "null_pct": 25.09,
+        "n_unique": 2,
+        "top_values": {
+          "0": 2144,
+          "1": 1988
+        },
+        "value_counts": {
+          "0": 2144,
+          "1": 1988
+        }
+      },
+      "dropout_stage_label": {
+        "dtype": "str",
+        "null_count": 1384,
+        "null_pct": 25.09,
+        "n_unique": 4,
+        "top_values": {
+          "Completed care journey": 2144,
+          "Medicine not collected": 1170,
+          "Review not attended": 543,
+          "Test not completed": 275
+        },
+        "value_counts": {
+          "Completed care journey": 2144,
+          "Medicine not collected": 1170,
+          "Review not attended": 543,
+          "Test not completed": 275
+        }
+      }
+    }
+  },
+  "_cross_file_overlap": {
+    "teleconsult_id: teleconsultations vs episode_outcomes": {
+      "left_n": 5516,
+      "right_n": 5516,
+      "intersection": 5516,
+      "left_not_in_right": 0
+    },
+    "teleconsult_id: prescriptions -> teleconsultations": {
+      "left_n": 4209,
+      "right_n": 5516,
+      "intersection": 4209,
+      "left_not_in_right": 0
+    },
+    "prescription_id: dispensing -> prescriptions": {
+      "left_n": 3231,
+      "right_n": 4209,
+      "intersection": 3231,
+      "left_not_in_right": 0
+    },
+    "episode_id: followup_visits vs outreach_actions": {
+      "left_n": 2575,
+      "right_n": 3152,
+      "intersection": 1153,
+      "left_not_in_right": 1422
+    },
+    "episode_id: followup_visits vs episode_outcomes": {
+      "left_n": 2575,
+      "right_n": 5516,
+      "intersection": 2575,
+      "left_not_in_right": 0
+    },
+    "episode_id: outreach_actions vs episode_outcomes": {
+      "left_n": 3152,
+      "right_n": 5516,
+      "intersection": 3152,
+      "left_not_in_right": 0
+    },
+    "episode_id: visit_history vs episode_outcomes": {
+      "left_n": 5516,
+      "right_n": 5516,
+      "intersection": 5516,
+      "left_not_in_right": 0
+    },
+    "facility_id: teleconsultations -> facility_reference": {
+      "left_n": 27,
+      "right_n": 27,
+      "intersection": 27,
+      "left_not_in_right": 0
+    },
+    "facility_id: prescriptions -> facility_reference": {
+      "left_n": 27,
+      "right_n": 27,
+      "intersection": 27,
+      "left_not_in_right": 0
+    },
+    "facility_id: dispensing -> facility_reference": {
+      "left_n": 27,
+      "right_n": 27,
+      "intersection": 27,
+      "left_not_in_right": 0
+    },
+    "facility_id: stock -> facility_reference": {
+      "left_n": 27,
+      "right_n": 27,
+      "intersection": 27,
+      "left_not_in_right": 0
+    },
+    "facility_id: labs -> facility_reference": {
+      "left_n": 27,
+      "right_n": 27,
+      "intersection": 27,
+      "left_not_in_right": 0
+    },
+    "facility_id: outreach -> facility_reference": {
+      "left_n": 27,
+      "right_n": 27,
+      "intersection": 27,
+      "left_not_in_right": 0
+    },
+    "village_id: patient_360 -> geography_reference": {
+      "left_n": 36,
+      "right_n": 36,
+      "intersection": 36,
+      "left_not_in_right": 0
+    }
+  },
+  "_source_id_cardinality": {
+    "teleconsultations.csv": {
+      "col": "tele_source_patient_id",
+      "rows": 5516,
+      "n_unique_source_ids": 4231
+    },
+    "ncd_screening.csv": {
+      "col": "ncd_source_patient_id",
+      "rows": 4748,
+      "n_unique_source_ids": 3589
+    },
+    "prescriptions.csv": {
+      "col": "rx_source_patient_id",
+      "rows": 5151,
+      "n_unique_source_ids": 3449
+    },
+    "medicine_dispensing.csv": {
+      "col": "pharm_source_patient_id",
+      "rows": 3756,
+      "n_unique_source_ids": 2781
+    },
+    "lab_tests.csv": {
+      "col": "lab_source_patient_id",
+      "rows": 2005,
+      "n_unique_source_ids": 1814
+    },
+    "followup_visits.csv": {
+      "col": "visit_source_patient_id",
+      "rows": 2575,
+      "n_unique_source_ids": 2270
+    },
+    "visit_history.csv": {
+      "col": "visit_source_patient_id",
+      "rows": 13061,
+      "n_unique_source_ids": 4747
+    },
+    "outreach_actions.csv": {
+      "col": "outreach_source_patient_id",
+      "rows": 6088,
+      "n_unique_source_ids": 2705
+    }
+  }
+}

@@ -1,0 +1,61 @@
+source_system,source_patient_id,patient_name,mobile,village,age,gender,block,predicted_patient_id,canonical_name_ref,masked_mobile_ref,village_ref,age_ref,gender_ref,block_ref,confidence,tier
+outreach_actions,OUP0001070,Sushma Shekar,9887458532,Bodajanampet,,,,P001927,Sushma Shekar,XXXXXX8532,Bodajanampet,67.0,F,Balanagar,1.0,high
+medicine_dispensing,PHP0000018,Shankar Devi,9675486654,Kondamallepally,,,,P000033,Shankar Devi,XXXXXX6654,Kondamallepally,67.0,M,Devarakonda,1.0,high
+outreach_actions,OUP0002373,Shobha Krishna,9564885929,Kalher,,,,P004402,Shobha Krishna,XXXXXX5929,Kalher,20.0,F,Narayankhed,1.0,high
+followup_visits,VIP0003063,Saritha Laxman,9678080865,Velpula,,,,P003638,Saritha Laxman,XXXXXX0865,Velpula,35.0,F,Midjil,1.0,high
+prescriptions,RXP0001868,Lakshmi Devi,9641228853,Jharasanga,,,,P002710,Lakshmi Devi,XXXXXX8853,Jharasangam,62.0,F,Zaheerabad,0.9002,high
+teleconsultations,TEP0001469,Swathi Jangam,9379409894,Mangalapally,48,F,Nakrekal,P001738,Swathi Jangam,XXXXXX9894,Mangalapally,46.0,F,Nakrekal,0.97,high
+teleconsultations,TEP0003527,Divya Basha,9676778351,Velpula,31,F,Midjil,P004193,Divya Basha,XXXXXX8351,Velpula,29.0,F,Midjil,0.97,high
+outreach_actions,OUP0001353,Sai Reddy,9399775873,Kalher,,,,P002467,Sai Reddy,XXXXXX5873,Kalher,46.0,M,Narayankhed,0.9845,high
+outreach_actions,OUP0002491,Srilatha Mallaiah,9929645718,Velpula,,,,P004621,Srilatha Mallaiah,XXXXXX5718,Velpula,54.0,F,Midjil,1.0,high
+visit_history,VIP0001962,Naresh Laxman,9910029254,Indresham,,,,P002314,Naresh Laxman,XXXXXX9254,Indresham,64.0,M,Patancheru,1.0,high
+visit_history,VIP0004324,Srinivas Laxman,9936806777,Jharasangam,,,,P000855,Srinivas Laxman,XXXXXX6777,Jharasangam,59.0,M,Zaheerabad,1.0,high
+lab_tests,LAP0001329,Sushma Kumar,9420598098,Gangapur,,,,P003709,Sushma Kumar,XXXXXX8098,Gangapur,35.0,F,Jadcherla,1.0,high
+teleconsultations,TEP0001211,Arun Basha,9794721146,Macharam,45,M,Jadcherla,P001432,Arun Basha,XXXXXX1146,Macharam,45.0,M,Jadcherla,1.0,high
+medicine_dispensing,PHP0002635,Bhavani,9388264281,Velpula,,,,P004748,Bhavani Begum,XXXXXX4281,Velpula,24.0,F,Midjil,0.8412,high
+visit_history,VIP0000966,Shankar Das,9008559985,Kallepally,,,,P001148,Shankar Das,XXXXXX9985,Kallepally,60.0,M,Balanagar,0.8823,high
+teleconsultations,TEP0003045,Divya Khan,9434174298,Mangalapally,70,F,Nakrekal,P003617,Divya Khan,XXXXXX4298,Mangalapally,72.0,F,Nakrekal,0.94,high
+teleconsultations,TEP0000403,Sai Laxman,9444028700,Ameenpur,40,M,Patancheru,P000476,Sai Laxman,XXXXXX8700,Ameenpur,39.0,M,Patancheru,0.97,high
+teleconsultations,TEP0001200,Nirmala Mudiraj,9956733509,Midjil,51,F,Midjil,P001421,Nirmala Mudiraj,XXXXXX3509,Midjil,50.0,F,Midjil,0.985,high
+ncd_screening,NCP0003077,Swathi Devi,9272301701,Kangti,45,F,Narayankhed,P004284,Swathi Devi,XXXXXX1701,Kangti,45.0,F,Narayankhed,1.0,high
+outreach_actions,OUP0001888,Swathi Devi,9507879357,Bodajanampet,,,,P003499,Swathi Devi,XXXXXX9357,Bodajanampet,60.0,F,Balanagar,1.0,high
+followup_visits,VIP0002907,Shankar Basha,9290488474,Velpula,,,,P002043,Harika Laxman,XXXXXX8474,Nakrekal,36.0,F,Nakrekal,0.5792,medium
+prescriptions,RXP0000545,Kavitha Jangam,9399153490,Rajapur,,,,P000798,Kavitha Jangam,XXXXXX3440,Rajapur,48.0,F,Balanagar,0.7059,medium
+followup_visits,VIP0003593,Kiran Mallaiah,9340232698,Nakrekal,,,,P004269,Kiran Mallaiah,XXXXXX2398,Nakrekal,30.0,M,Nakrekal,0.7059,medium
+outreach_actions,OUP0002476,Anil Reddy,9914486561,Chandur,,,,P004587,Anil Reddy,XXXXXX6961,Chandur,48.0,M,Chandur,0.7059,medium
+lab_tests,LAP0000616,Rani Kumar,9582794618,Bodajanampet,,,,P001725,Rani Kumar,XXXXXX2618,Bodajanampet,41.0,F,Balanagar,0.7059,medium
+ncd_screening,NCP0002125,Vinod Narsimha,9206321196,Kangti,39,M,Narayankhed,P002965,Vinod Narsimha,XXXXXX1116,Kangti,41.0,M,Narayankhed,0.69,medium
+lab_tests,LAP0000942,Praveen Goud,9399049502,Manoor,,,,P000688,Praveen Begum,XXXXXX9502,Vemula,49.0,M,Midjil,0.7176,medium
+lab_tests,LAP0001215,Nirmala Begum,9584183325,Peddadinne,,,,P003388,Nirmala Begum,XXXXXX1325,Peddadinne,36.0,F,Devarakonda,0.7059,medium
+lab_tests,LAP0000910,Mohan Rao,9050162170,Mangalapally,,,,P002560,Mohan Rao,XXXXXX1170,Mangalapally,31.0,M,Nakrekal,0.7059,medium
+visit_history,VIP0002261,Suresh Mallaiah,9446634202,Mangalapally,,,,P002667,Suresh Mallaiah,XXXXXX4272,Mangalapally,37.0,M,Nakrekal,0.7059,medium
+ncd_screening,NCP0000115,Rajesh,9960417005,Nakreka,34,M,Nakrekal,P000147,Rajesh Khan,XXXXXX7005,Nakrekal,34.0,M,Nakrekal,0.7176,medium
+prescriptions,RXP0002411,Nirmala Khan,9188589603,Patancheru,,,,P003517,Nirmala Khan,XXXXXX9693,Patancheru,65.0,F,Patancheru,0.7059,medium
+teleconsultations,TEP0003093,Shobha,9681584411,Nermat,32,F,Chandur,P003673,Shobha Mallaiah,XXXXXX4411,Nermata,33.0,F,Chandur,0.6271,medium
+medicine_dispensing,PHP0001201,Shankar Patel,9622739511,Rajapur,,,,P002138,Shankar Patel,XXXXXX9541,Rajapur,56.0,M,Balanagar,0.7059,medium
+ncd_screening,NCP0000332,Nirmla Laxman,9147839941,Bangarigadda,72,F,Chandur,P000438,Nirmala Laxman,XXXXXX9241,Bangarigadda,70.0,F,Chandur,0.6733,medium
+ncd_screening,NCP0002292,Srilatha Begum,9866801334,Gundlapally,52,F,Devarakonda,P003209,Srilatha Begum,XXXXXX1354,Gundlapally,50.0,F,Devarakonda,0.69,medium
+followup_visits,VIP0002366,Venkatesh Jangam,9037000551,Kalher,,,,P002795,Venkatesh Jangam,XXXXXX0051,Kalher,58.0,M,Narayankhed,0.7059,medium
+followup_visits,VIP0000853,Raghav Mallaiah,9085904791,Manoor,,,,P001016,Raghav Mallaiah,XXXXXX4741,Manoor,76.0,M,Narayankhed,0.7059,medium
+lab_tests,LAP0000753,Rajesh Narsimha,9604518338,Indresham,,,,P002206,Shobha Narsimha,XXXXXX8338,Marrur,52.0,F,Nakrekal,0.6824,medium
+medicine_dispensing,PHP0000751,Arun,9768184472,Jharasangam,,,,P001371,Arun Narsimha,XXXXXX4472,Jharasangam,43.0,M,Zaheerabad,0.7197,medium
+medicine_dispensing,PHP0001987,Arun Mallaiah,9955804538,Gangapur,,,,,,,,,,,1.0,ambiguous
+visit_history,VIP0002621,Divya,,Midjil,,,,,,,,,,,0.7188,ambiguous
+ncd_screening,NCP0000935,Srinivas Begum,,Manoor,43,M,Narayankhed,,,,,,,,1.0,ambiguous
+visit_history,VIP0003962,Mohan Begum,+91-94862-04405,Badepally,,,,,,,,,,,1.0,ambiguous
+visit_history,VIP0000694,Suresh Goud,9995533938,Midjil,,,,,,,,,,,1.0,ambiguous
+lab_tests,LAP0001569,Raju Reddy,9919820743,Badepally,,,,,,,,,,,0.5588,ambiguous
+visit_history,VIP0001742,Naveen,,Vemula,,,,,,,,,,,0.75,ambiguous
+prescriptions,RXP0000940,Aneel Reddy,9626466056,Donur,,,,,,,,,,,0.5703,ambiguous
+visit_history,VIP0003819,Suresh Chary,9300144683,Kohir,,,,,,,,,,,1.0,ambiguous
+medicine_dispensing,PHP0000113,Divya Basha,9221725407,Kohir,,,,,,,,,,,1.0,ambiguous
+medicine_dispensing,PHP0000778,Lalitha Narsimha,9234887808,Velpula,,,,,,,,,,,0.4706,unmatched
+outreach_actions,OUP0001786,nitha Krishna,,VEMULA,,,,,,,,,,,0.0,unmatched
+lab_tests,LAP0001250,Ranee Mallaiah,,JHARASANGAM,,,,,,,,,,,0.0,unmatched
+prescriptions,RXP0002676,Raju Naik,9119145527,BHANUR,,,,,,,,,,,0.7059,unmatched
+followup_visits,VIP0000819,Saritha Reddy,9975285591,Narayankhed,,,,,,,,,,,0.7059,unmatched
+followup_visits,VIP0000238,Harika Jangam,,Kallepally,,,,,,,,,,,1.0,unmatched
+prescriptions,RXP0001065,Shobha Patel,,Manoor,,,,,,,,,,,1.0,unmatched
+followup_visits,VIP0003717,Bhavani Rao,,Chandur,,,,,,,,,,,1.0,unmatched
+followup_visits,VIP0000710,Suresh Devi,,Bangarigadd,,,,,,,,,,,0.75,unmatched
+prescriptions,RXP0000335,Si Laxman,,Ameenpur,,,,,,,,,,,0.0,unmatched

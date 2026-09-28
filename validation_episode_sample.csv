@@ -1,0 +1,51 @@
+episode_id,teleconsult_id,consult_date,cohort,medicine_advised,prescription_count,dispensing_attempt_count,medicine_outcome,test_advised,linked_lab_count,test_completion,review_advised,followup_visit_count,review_completion,outreach_count,successful_contact,lost_to_followup_label,dropout_stage_label,resolved_patient_id,patient_link_confidence,notes
+E0000473,TC0000473,2026-07-11,EVALUATION,Yes,2,2,partial dispensing,Yes,0,,Yes,1,True,0,False,,,P000416,0.94,indeterminate | lab_link_status=no_match_in_window | patient_link_tier=high
+E0000624,TC0000624,2026-06-19,DEVELOPMENT,Yes,1,1,partial dispensing,No,0,,Yes,1,True,0,False,0.0,Completed care journey,P000556,1.0,indeterminate | lab_link_status=n/a | patient_link_tier=high
+E0000658,TC0000658,2026-01-15,DEVELOPMENT,Yes,1,0,medicine not received,No,0,,Yes,1,True,1,False,1.0,Medicine not collected,P000588,0.79,patient_no_collection_attempt | lab_link_status=n/a | patient_link_tier=high
+E0000896,TC0000896,2026-07-29,EVALUATION,Yes,2,2,completed,Yes,1,Available,Yes,1,True,0,False,,,P000815,0.57,completed | lab_link_status=matched | patient_link_tier=medium
+E0000978,TC0000978,2026-03-12,DEVELOPMENT,Yes,1,0,medicine not received,No,0,,No,0,False,1,False,1.0,Medicine not collected,P000897,1.0,patient_no_collection_attempt | lab_link_status=n/a | patient_link_tier=high
+E0001538,TC0001538,2026-01-08,DEVELOPMENT,Yes,2,2,partial dispensing,Yes,1,Ordered-not-completed,Yes,1,True,2,True,1.0,Medicine not collected,P001406,0.6857,system_stockout | lab_link_status=matched | patient_link_tier=medium
+E0001596,TC0001596,2026-07-03,EVALUATION,No,0,0,,No,0,,Yes,1,True,2,True,,,P001450,0.8034,not_advised | lab_link_status=n/a | patient_link_tier=high
+E0001673,TC0001673,2026-06-01,DEVELOPMENT,Yes,1,1,completed,Yes,1,Ordered-not-completed,No,0,False,2,True,1.0,Test not completed,P001519,0.94,completed | lab_link_status=matched | patient_link_tier=high
+E0001725,TC0001725,2026-04-09,DEVELOPMENT,Yes,1,1,partial dispensing,No,0,,No,0,False,3,True,1.0,Medicine not collected,P001573,1.0,indeterminate | lab_link_status=n/a | patient_link_tier=high
+E0001729,TC0001729,2026-01-27,DEVELOPMENT,Yes,2,1,medicine not received,Yes,1,Available,Yes,1,True,3,True,1.0,Medicine not collected,P001576,1.0,system_stockout | lab_link_status=matched | patient_link_tier=high
+E0001774,TC0001774,2026-05-23,DEVELOPMENT,Yes,1,1,partial dispensing,No,0,,Yes,1,True,0,False,0.0,Completed care journey,P001613,0.97,indeterminate | lab_link_status=n/a | patient_link_tier=high
+E0001810,TC0001810,2026-08-14,EVALUATION,Yes,2,0,medicine not received,No,0,,No,0,False,2,True,,,P001644,1.0,system_stockout | lab_link_status=n/a | patient_link_tier=high
+E0001849,TC0001849,2026-03-22,DEVELOPMENT,No,0,0,,No,0,,Yes,0,False,1,True,1.0,Review not attended,P001677,0.69,not_advised | lab_link_status=n/a | patient_link_tier=medium
+E0001860,TC0001860,2026-06-29,DEVELOPMENT,Yes,1,1,completed,Yes,1,Available,Yes,0,False,1,True,1.0,Review not attended,P001686,0.97,completed | lab_link_status=matched | patient_link_tier=high
+E0002106,TC0002106,2026-04-25,DEVELOPMENT,Yes,1,1,completed,No,0,,Yes,1,True,0,False,0.0,Completed care journey,P001911,0.6979,completed | lab_link_status=n/a | patient_link_tier=medium
+E0002141,TC0002141,2026-07-08,EVALUATION,Yes,3,2,partial dispensing,No,0,,Yes,1,True,2,True,,,P001937,0.9545,indeterminate | lab_link_status=n/a | patient_link_tier=high
+E0002413,TC0002413,2026-03-20,DEVELOPMENT,Yes,1,1,partial dispensing,No,0,,No,0,False,0,False,0.0,Completed care journey,P002189,0.97,indeterminate | lab_link_status=n/a | patient_link_tier=high
+E0002505,TC0002505,2026-06-14,DEVELOPMENT,No,0,0,,Yes,1,Available,Yes,0,False,3,True,1.0,Review not attended,P002270,1.0,not_advised | lab_link_status=matched | patient_link_tier=high
+E0002531,TC0002531,2026-03-16,DEVELOPMENT,Yes,1,1,completed,No,0,,Yes,1,True,3,True,1.0,Medicine not collected,P002289,0.94,completed | lab_link_status=n/a | patient_link_tier=high
+E0002663,TC0002663,2026-05-05,DEVELOPMENT,Yes,1,0,medicine not received,No,0,,Yes,1,True,1,False,1.0,Medicine not collected,P002405,0.94,patient_no_collection_attempt | lab_link_status=n/a | patient_link_tier=high
+E0002717,TC0002717,2026-02-01,DEVELOPMENT,Yes,3,2,completed,No,0,,Yes,1,True,1,False,1.0,Medicine not collected,P002454,1.0,completed | lab_link_status=n/a | patient_link_tier=high
+E0002733,TC0002733,2026-06-19,DEVELOPMENT,Yes,1,1,completed,Yes,0,,Yes,1,True,0,False,0.0,Completed care journey,P002469,0.97,completed | lab_link_status=no_match_in_window | patient_link_tier=high
+E0002820,TC0002820,2026-06-19,DEVELOPMENT,Yes,1,1,partial dispensing,No,0,,No,0,False,2,True,0.0,Completed care journey,P002548,0.9413,indeterminate | lab_link_status=n/a | patient_link_tier=high
+E0002890,TC0002890,2026-03-27,DEVELOPMENT,Yes,2,1,completed,Yes,1,Available,Yes,1,True,3,True,1.0,Medicine not collected,P002605,0.94,completed | lab_link_status=matched | patient_link_tier=high
+E0003039,TC0003039,2026-05-01,DEVELOPMENT,Yes,1,1,completed,No,0,,No,0,False,0,False,0.0,Completed care journey,P002745,1.0,completed | lab_link_status=n/a | patient_link_tier=high
+E0003056,TC0003056,2026-04-23,DEVELOPMENT,Yes,1,1,partial dispensing,No,0,,Yes,1,True,0,False,0.0,Completed care journey,P002761,1.0,indeterminate | lab_link_status=n/a | patient_link_tier=high
+E0003102,TC0003102,2026-04-30,DEVELOPMENT,Yes,3,1,completed,Yes,0,,Yes,0,False,1,False,1.0,Medicine not collected,P002804,0.94,completed | lab_link_status=no_match_in_window | patient_link_tier=high
+E0003132,TC0003132,2026-06-18,DEVELOPMENT,Yes,1,1,completed,No,0,,Yes,0,False,3,True,1.0,Review not attended,P002825,0.9463,completed | lab_link_status=n/a | patient_link_tier=high
+E0003367,TC0003367,2026-07-14,EVALUATION,Yes,1,0,medicine not received,Yes,1,Available,No,0,False,1,True,,,P003055,1.0,patient_no_collection_attempt | lab_link_status=matched | patient_link_tier=high
+E0003390,TC0003390,2026-03-06,DEVELOPMENT,Yes,1,0,medicine not received,Yes,1,Available,No,0,False,3,True,1.0,Medicine not collected,P003073,0.94,patient_no_collection_attempt | lab_link_status=matched | patient_link_tier=high
+E0003393,TC0003393,2026-01-27,DEVELOPMENT,Yes,1,0,medicine not received,Yes,1,Ordered-not-completed,Yes,0,False,1,True,1.0,Medicine not collected,P003076,0.94,patient_no_collection_attempt | lab_link_status=matched | patient_link_tier=high
+E0003656,TC0003656,2026-05-13,DEVELOPMENT,Yes,1,1,partial dispensing,Yes,1,Available,No,0,False,2,False,0.0,Completed care journey,P003319,0.92,indeterminate | lab_link_status=matched | patient_link_tier=high
+E0003662,TC0003662,2026-07-01,EVALUATION,Yes,3,2,completed,Yes,1,Available,No,0,False,2,True,,,P003323,1.0,completed | lab_link_status=matched | patient_link_tier=high
+E0003848,TC0003848,2026-06-16,DEVELOPMENT,Yes,1,1,medicine not received,No,0,,Yes,1,True,1,True,1.0,Medicine not collected,P003503,0.97,system_stockout | lab_link_status=n/a | patient_link_tier=high
+E0003913,TC0003913,2026-03-07,DEVELOPMENT,Yes,2,2,completed,Yes,1,Available,Yes,1,True,0,False,0.0,Completed care journey,P003567,1.0,completed | lab_link_status=matched | patient_link_tier=high
+E0003965,TC0003965,2026-07-12,EVALUATION,Yes,2,2,partial dispensing,Yes,0,,Yes,1,True,2,True,,,P003613,1.0,indeterminate | lab_link_status=no_match_in_window | patient_link_tier=high
+E0004076,TC0004076,2026-07-30,EVALUATION,Yes,1,0,medicine not received,Yes,1,Ordered-not-completed,No,0,False,3,True,,,P003718,1.0,patient_no_collection_attempt | lab_link_status=matched | patient_link_tier=high
+E0004189,TC0004189,2026-05-22,DEVELOPMENT,Yes,1,1,partial dispensing,Yes,1,Ordered-not-completed,No,0,False,2,False,1.0,Test not completed,P003814,1.0,indeterminate | lab_link_status=matched | patient_link_tier=high
+E0004206,TC0004206,2026-03-31,DEVELOPMENT,No,0,0,,Yes,1,Available,No,0,False,0,False,0.0,Completed care journey,P003831,1.0,not_advised | lab_link_status=matched | patient_link_tier=high
+E0004246,TC0004246,2026-01-24,DEVELOPMENT,Yes,1,0,medicine not received,Yes,1,Available,Yes,0,False,2,True,1.0,Medicine not collected,P003870,0.94,patient_no_collection_attempt | lab_link_status=matched | patient_link_tier=high
+E0004513,TC0004513,2026-05-21,DEVELOPMENT,No,0,0,,Yes,1,Ordered-not-completed,Yes,1,True,1,False,1.0,Test not completed,P004110,1.0,not_advised | lab_link_status=matched | patient_link_tier=high
+E0004572,TC0004572,2026-07-23,EVALUATION,Yes,1,1,partial dispensing,Yes,1,Available,Yes,1,True,0,False,,,P004163,1.0,indeterminate | lab_link_status=matched | patient_link_tier=high
+E0004726,TC0004726,2026-03-05,DEVELOPMENT,Yes,2,2,completed,No,0,,Yes,0,False,1,True,1.0,Review not attended,P004295,1.0,completed | lab_link_status=n/a | patient_link_tier=high
+E0004815,TC0004815,2026-06-18,DEVELOPMENT,Yes,2,1,medicine not received,Yes,1,Available,Yes,0,False,1,True,1.0,Medicine not collected,P004377,0.97,system_stockout | lab_link_status=matched | patient_link_tier=high
+E0004891,TC0004891,2026-05-02,DEVELOPMENT,Yes,1,0,medicine not received,No,0,,No,0,False,1,True,1.0,Medicine not collected,P004444,0.97,patient_no_collection_attempt | lab_link_status=n/a | patient_link_tier=high
+E0004941,TC0004941,2026-03-13,DEVELOPMENT,Yes,2,1,medicine not received,Yes,1,Available,No,0,False,3,True,1.0,Medicine not collected,P004485,1.0,system_stockout | lab_link_status=matched | patient_link_tier=high
+E0004960,TC0004960,2026-03-14,DEVELOPMENT,Yes,1,1,completed,Yes,1,Ordered-not-completed,No,0,False,3,True,1.0,Test not completed,P004499,1.0,completed | lab_link_status=matched | patient_link_tier=high
+E0005088,TC0005088,2026-08-11,EVALUATION,Yes,1,1,partial dispensing,Yes,1,Available,Yes,1,True,0,False,,,P004613,1.0,indeterminate | lab_link_status=matched | patient_link_tier=high
+E0005267,TC0005267,2026-01-17,DEVELOPMENT,No,0,0,,Yes,1,Ordered-not-completed,Yes,0,False,2,True,1.0,Test not completed,P004783,1.0,not_advised | lab_link_status=matched | patient_link_tier=high
+E0005351,TC0005351,2026-02-05,DEVELOPMENT,Yes,1,0,medicine not received,No,0,,No,0,False,2,True,1.0,Medicine not collected,P004852,1.0,patient_no_collection_attempt | lab_link_status=n/a | patient_link_tier=high

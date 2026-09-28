@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-09-28T22:05:52.163193",
+  "cohort_cutoff": "2026-06-30",
+  "row_counts": {
+    "patient_360_reference": 5000,
+    "teleconsultations": 5516,
+    "ncd_screening": 4748,
+    "prescriptions": 5151,
+    "medicine_dispensing": 3756,
+    "medicine_stock_status": 1296,
+    "lab_tests": 2005,
+    "followup_visits": 2575,
+    "visit_history": 13061,
+    "outreach_actions": 6088,
+    "facility_reference": 27,
+    "geography_reference": 36,
+    "episode_outcomes": 5516
+  },
+  "linkage_stats": [
+    {
+      "source_system": "teleconsultations",
+      "distinct_source_ids": 4231,
+      "high": 4205,
+      "medium": 19,
+      "ambiguous": 0,
+      "unmatched": 7,
+      "linked_pct": 99.83
+    },
+    {
+      "source_system": "ncd_screening",
+      "distinct_source_ids": 3589,
+      "high": 3559,
+      "medium": 21,
+      "ambiguous": 1,
+      "unmatched": 8,
+      "linked_pct": 99.75
+    },
+    {
+      "source_system": "prescriptions",
+      "distinct_source_ids": 3449,
+      "high": 3347,
+      "medium": 23,
+      "ambiguous": 4,
+      "unmatched": 75,
+      "linked_pct": 97.71
+    },
+    {
+      "source_system": "medicine_dispensing",
+      "distinct_source_ids": 2781,
+      "high": 2694,
+      "medium": 19,
+      "ambiguous": 4,
+      "unmatched": 64,
+      "linked_pct": 97.55
+    },
+    {
+      "source_system": "lab_tests",
+      "distinct_source_ids": 1814,
+      "high": 1744,
+      "medium": 24,
+      "ambiguous": 1,
+      "unmatched": 45,
+      "linked_pct": 97.46
+    },
+    {
+      "source_system": "followup_visits",
+      "distinct_source_ids": 2270,
+      "high": 2166,
+      "medium": 31,
+      "ambiguous": 1,
+      "unmatched": 72,
+      "linked_pct": 96.78
+    },
+    {
+      "source_system": "visit_history",
+      "distinct_source_ids": 4747,
+      "high": 4684,
+      "medium": 10,
+      "ambiguous": 13,
+      "unmatched": 40,
+      "linked_pct": 98.88
+    },
+    {
+      "source_system": "outreach_actions",
+      "distinct_source_ids": 2705,
+      "high": 2666,
+      "medium": 11,
+      "ambiguous": 1,
+      "unmatched": 27,
+      "linked_pct": 98.96
+    }
+  ],
+  "village_resolution": {
+    "n_operational_villages_raw": 113,
+    "n_canonical_villages": 36,
+    "resolved_pct": 100.0,
+    "mean_match_score": 0.996
+  },
+  "lab_linkage": {
+    "test_advised_episodes": 2005,
+    "matched": 1944,
+    "linkage_unresolved": 2,
+    "no_match_in_window": 59
+  },
+  "history_linkage": {
+    "total_episodes": 5516,
+    "matched": 5506,
+    "linkage_unresolved": 10
+  }
+}
