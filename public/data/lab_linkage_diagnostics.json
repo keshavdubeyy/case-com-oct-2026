@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-09-28T22:05:53.568713",
+  "method_note": "Re-derives build_lab_journey()'s exact patient-link + [-3,+45]-day-window + greedy-nearest-date + one-time-use assignment (unchanged), instrumented to keep lab_record_id so contested/order-sensitive assignments can be counted. Does not modify the production assignment algorithm.",
+  "reproduction_check": {
+    "production_pipeline_matched_count": 1944,
+    "diagnostics_reproduction_matched_count": 1944,
+    "matches_production": true
+  },
+  "window_overlap": {
+    "patients_with_overlapping_test_advised_windows": 99,
+    "overlapping_episode_pairs": 106,
+    "note": "Counts patients with >=2 test-advised episodes whose [-3,+45]-day windows around consult_date overlap each other -- a structural precondition for ambiguity, independent of whether a real lab record exists in the overlap."
+  },
+  "lab_record_contention": {
+    "lab_records_with_resolved_patient": 1951,
+    "lab_records_eligible_for_more_than_one_episode": 89,
+    "episodes_competing_for_at_least_one_contested_lab_record": 171
+  },
+  "order_sensitivity_of_actual_assignments": {
+    "total_matched_assignments": 1944,
+    "order_sensitive_assignments": 89,
+    "order_sensitive_pct_of_matched": 4.58,
+    "note": "Of the lab records actually assigned, how many were also eligible (within window) for >=1 other test-advised episode of the same patient -- i.e. could plausibly have been assigned differently under a different episode-processing order."
+  }
+}
